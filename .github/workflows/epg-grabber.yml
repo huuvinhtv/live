@@ -1,0 +1,58 @@
+name: ▶️ EPG Grabber
+
+on:
+  schedule:
+  # ⏰ Giờ UTC - Giờ Việt Nam (UTC+7)
+  - cron: '45 17 * * *'   # 00:45 VN
+  - cron: '15 18 * * *'   # 01:15 VN (backup)
+  - cron: '45 18 * * *'   # 01:45 VN (backup)
+  - cron: '5 21 * * *'    # 04:05 VN (backup)
+  - cron: '00 09 * * *'   # 16:00 VN (backup cuối)
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  epg-grabber:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout live repo
+        uses: actions/checkout@v4
+
+      - name: Checkout engine repo
+        uses: actions/checkout@v4
+        with:
+          repository: huuvinhtv/engine
+          path: engine
+          token: ${{ secrets.ENGINE_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Run EPG engine
+        run: |
+          mkdir -p epgs
+          python engine/Backup/epg-grabber.py
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+          git add epgs/epg.xml epgs/epg.xml.gz
+
+          if git diff --staged --quiet; then
+            echo "No changes"
+          else
+            git commit -m "🔄 Update EPG"
+            git push
+          fi
