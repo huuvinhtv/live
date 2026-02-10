@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<tv generator-info-name="epgvn.gq" last-update="2026-02-10T18:41:34Z">
+<tv generator-info-name="epgvn.gq" last-update="2026-02-10T19:23:24Z">
   <channel id="abcaustralia">
     <display-name>ABC Australia</display-name>
     <icon src="https://vnepg.site/logos/153.png" />
@@ -6201,6 +6201,168 @@
     <desc lang="vi">Nhà ở xã hội - Không để ai bị bỏ lại phía sau</desc>
     <icon src="https://vnepg.site/logos/71.png" />
   </programme>
+  <programme start="20260211000000 +0700" stop="20260211005500 +0700" channel="antvhd">
+    <title lang="vi">Phim truyện 17h05: Đến giờ ám sát, tập 5/28</title>
+  </programme>
+  <programme start="20260211005500 +0700" stop="20260211010000 +0700" channel="antvhd">
+    <title lang="vi">Lệnh truy nã</title>
+  </programme>
+  <programme start="20260211010000 +0700" stop="20260211012000 +0700" channel="antvhd">
+    <title lang="vi">Phía sau bản án (20): Những khởi đầu mới</title>
+  </programme>
+  <programme start="20260211012000 +0700" stop="20260211013000 +0700" channel="antvhd">
+    <title lang="vi">An ninh với cuộc sống (10): 06/02/26: Đêm trắng vì bình yên nhân dân</title>
+  </programme>
+  <programme start="20260211013000 +0700" stop="20260211014000 +0700" channel="antvhd">
+    <title lang="vi">Câu chuyện giao thông: Câu chuyện giao thông 10/02/26 Bến xe Hà Nội sẵn sàng phục vụ cao điểm Tết</title>
+  </programme>
+  <programme start="20260211014000 +0700" stop="20260211020000 +0700" channel="antvhd">
+    <title lang="vi">Nhân vật sự kiện (10): Niềm tự hào của chiến sĩ cảnh sát bảo vệ mục tiêu</title>
+  </programme>
+  <programme start="20260211020000 +0700" stop="20260211023000 +0700" channel="antvhd">
+    <title lang="vi">Hành trình phá án: Truy vết tiền ảo</title>
+  </programme>
+  <programme start="20260211023000 +0700" stop="20260211031500 +0700" channel="antvhd">
+    <title lang="vi">Phim truyện 13h00: Trường tương tư, tập 33/39</title>
+  </programme>
+  <programme start="20260211031500 +0700" stop="20260211034500 +0700" channel="antvhd">
+    <title lang="vi">CÂU CHUYỆN CUỐI TUẦN: Nhà ở xã hội - Không để ai bị bỏ lại phía sau</title>
+  </programme>
+  <programme start="20260211034500 +0700" stop="20260211040000 +0700" channel="antvhd">
+    <title lang="vi">Việt Nam quê hương tôi (10): Làng nghề chổi đót Chiêm Sơn</title>
+  </programme>
+  <programme start="20260211040000 +0700" stop="20260211043000 +0700" channel="antvhd">
+    <title lang="vi">Nhật ký an ninh (30)</title>
+  </programme>
+  <programme start="20260211043000 +0700" stop="20260211050000 +0700" channel="antvhd">
+    <title lang="vi">Phim tài liệu: Niềm tin còn lại</title>
+  </programme>
+  <programme start="20260211050000 +0700" stop="20260211051500 +0700" channel="antvhd">
+    <title lang="vi">Chào cờ và Võ thể dục CAND: Số 10</title>
+  </programme>
+  <programme start="20260211051500 +0700" stop="20260211054500 +0700" channel="antvhd">
+    <title lang="vi">Phim tài liệu: Những trang sách sáng ngời ánh thép</title>
+  </programme>
+  <programme start="20260211054500 +0700" stop="20260211060000 +0700" channel="antvhd">
+    <title lang="vi">Nhân vật sự kiện (10): Những chiến sĩ Công an làm báo</title>
+  </programme>
+  <programme start="20260211060000 +0700" stop="20260211061000 +0700" channel="antvhd">
+    <title lang="vi">Yoga \u0026 Phong cách: Số 120: Bài tập Yoga đôi, Phần 1</title>
+  </programme>
+  <programme start="20260211061000 +0700" stop="20260211062500 +0700" channel="antvhd">
+    <title lang="vi">ANTV kết nối: Số 6/2026</title>
+  </programme>
+  <programme start="20260211062500 +0700" stop="20260211070000 +0700" channel="antvhd">
+    <title lang="vi">An ninh ngày mới</title>
+  </programme>
+  <programme start="20260211070000 +0700" stop="20260211075000 +0700" channel="antvhd">
+    <title lang="vi">Phim truyện 7h00: Tam sinh mộng, tập 47/72</title>
+  </programme>
+  <programme start="20260211075000 +0700" stop="20260211080000 +0700" channel="antvhd">
+    <title lang="vi">Việt Nam quê hương tôi (10): Khám phá văn hóa Chăm ở Mỹ Sơn</title>
+  </programme>
+  <programme start="20260211080000 +0700" stop="20260211081000 +0700" channel="antvhd">
+    <title lang="vi">Nhân vật sự kiện (10): Người “đạo diễn” của những trận đánh</title>
+  </programme>
+  <programme start="20260211081000 +0700" stop="20260211084000 +0700" channel="antvhd">
+    <title lang="vi">Hành trình phá án: Bí ẩn xác chết trong rừng Xéo Tả</title>
+  </programme>
+  <programme start="20260211084000 +0700" stop="20260211090000 +0700" channel="antvhd">
+    <title lang="vi">An ninh văn hóa (20): Tết có nhạt đi trong mắt người trẻ?</title>
+  </programme>
+  <programme start="20260211090000 +0700" stop="20260211090500 +0700" channel="antvhd">
+    <title lang="vi">Tin nhanh</title>
+  </programme>
+  <programme start="20260211090500 +0700" stop="20260211092500 +0700" channel="antvhd">
+    <title lang="vi">Xây dựng Đảng (20): Đại hội XIV - Bản lĩnh và khát vọng vươn mình</title>
+  </programme>
+  <programme start="20260211092500 +0700" stop="20260211093500 +0700" channel="antvhd">
+    <title lang="vi">Nhân vật sự kiện (10): Nơi tình người được nuôi dưỡng cùng kỷ luật thép</title>
+  </programme>
+  <programme start="20260211093500 +0700" stop="20260211095000 +0700" channel="antvhd">
+    <title lang="vi">An ninh với cuộc sống (10): An ninh với cuộc sống (10) 09/02/26 Cẩn trọng với “bẫy” làm đẹp đón Tết</title>
+  </programme>
+  <programme start="20260211095000 +0700" stop="20260211100500 +0700" channel="antvhd">
+    <title lang="vi">An ninh thế giới</title>
+  </programme>
+  <programme start="20260211100500 +0700" stop="20260211102500 +0700" channel="antvhd">
+    <title lang="vi">Khát vọng vươn mình: Từ chuyển đổi số tới cơ hội cho y tế tư nhân phát triển</title>
+  </programme>
+  <programme start="20260211102500 +0700" stop="20260211110000 +0700" channel="antvhd">
+    <title lang="vi">Phim tài liệu: Bộ trưởng của chúng tôi</title>
+  </programme>
+  <programme start="20260211110000 +0700" stop="20260211113000 +0700" channel="antvhd">
+    <title lang="vi">An ninh toàn cảnh</title>
+  </programme>
+  <programme start="20260211113000 +0700" stop="20260211120000 +0700" channel="antvhd">
+    <title lang="vi">113 online</title>
+  </programme>
+  <programme start="20260211120000 +0700" stop="20260211125000 +0700" channel="antvhd">
+    <title lang="vi">Phim truyện 12h00: Những đứa con nhà họ Kiều, tập 35/37</title>
+  </programme>
+  <programme start="20260211125000 +0700" stop="20260211130000 +0700" channel="antvhd">
+    <title lang="vi">Việt Nam quê hương tôi (10): Hoa sen trên gỗ</title>
+  </programme>
+  <programme start="20260211130000 +0700" stop="20260211135000 +0700" channel="antvhd">
+    <title lang="vi">Phim truyện 13h00: Trường tương tư, tập 34/39</title>
+  </programme>
+  <programme start="20260211135000 +0700" stop="20260211140000 +0700" channel="antvhd">
+    <title lang="vi">Câu chuyện giao thông: Câu chuyện giao thông 11/02/26</title>
+  </programme>
+  <programme start="20260211140000 +0700" stop="20260211150000 +0700" channel="antvhd">
+    <title lang="vi">Phim truyện 14h00: Tân nương giả danh, tập 20/30</title>
+  </programme>
+  <programme start="20260211150000 +0700" stop="20260211151500 +0700" channel="antvhd">
+    <title lang="vi">113 online (2)</title>
+  </programme>
+  <programme start="20260211151500 +0700" stop="20260211153500 +0700" channel="antvhd">
+    <title lang="vi">Vì nhân dân phục vụ (20): Không chùn bước</title>
+  </programme>
+  <programme start="20260211153500 +0700" stop="20260211160500 +0700" channel="antvhd">
+    <title lang="vi">Hồ sơ vụ án: Cuộc truy kích xuyên biên giới</title>
+  </programme>
+  <programme start="20260211160500 +0700" stop="20260211163500 +0700" channel="antvhd">
+    <title lang="vi">Hành trình phá án: Dụ sói rời hang</title>
+  </programme>
+  <programme start="20260211163500 +0700" stop="20260211165500 +0700" channel="antvhd">
+    <title lang="vi">Kinh tế \u0026 Tiêu dùng</title>
+  </programme>
+  <programme start="20260211165500 +0700" stop="20260211170500 +0700" channel="antvhd">
+    <title lang="vi">Việt Nam quê hương tôi (10): Giữ lấy nét làng</title>
+  </programme>
+  <programme start="20260211170500 +0700" stop="20260211180000 +0700" channel="antvhd">
+    <title lang="vi">Phim truyện 17h05: Đến giờ ám sát, tập 6/28</title>
+  </programme>
+  <programme start="20260211180000 +0700" stop="20260211190000 +0700" channel="antvhd">
+    <title lang="vi">An ninh 24h (55)</title>
+  </programme>
+  <programme start="20260211190000 +0700" stop="20260211194500 +0700" channel="antvhd">
+    <title lang="vi">Thời sự VTV (Tiếp sóng)</title>
+  </programme>
+  <programme start="20260211194500 +0700" stop="20260211200000 +0700" channel="antvhd">
+    <title lang="vi">An ninh với cuộc sống (10): Siết chặt an ninh hàng không - Bảo vệ hành trình đoàn viên dịp Tết</title>
+  </programme>
+  <programme start="20260211200000 +0700" stop="20260211201000 +0700" channel="antvhd">
+    <title lang="vi">Tin nhanh</title>
+  </programme>
+  <programme start="20260211201000 +0700" stop="20260211203500 +0700" channel="antvhd">
+    <title lang="vi">Góc nhìn sự thật (20): Khi “đàn chim Chơ-rao” trở về</title>
+  </programme>
+  <programme start="20260211203500 +0700" stop="20260211204500 +0700" channel="antvhd">
+    <title lang="vi">Nhân vật sự kiện (10): An ninh Quảng Đà - Đôi dòng ký ức</title>
+  </programme>
+  <programme start="20260211204500 +0700" stop="20260211211000 +0700" channel="antvhd">
+    <title lang="vi">Phóng sự (20): Niềm tin hồi sinh sau mái ấm Quang Trung</title>
+  </programme>
+  <programme start="20260211211000 +0700" stop="20260211220500 +0700" channel="antvhd">
+    <title lang="vi">Phim truyện 21h10: Đội trọng án - Phần 4, tập 15/20</title>
+  </programme>
+  <programme start="20260211220500 +0700" stop="20260211224000 +0700" channel="antvhd">
+    <title lang="vi">Nhật ký an ninh (30)</title>
+  </programme>
+  <programme start="20260211224000 +0700" stop="20260211233000 +0700" channel="antvhd">
+    <title lang="vi">Phim truyện 22h40: Người vợ hoàn hảo, tập 3/82</title>
+  </programme>
   <programme channel="antvhd" channel-number="33" start="20260209000000 +0700" stop="20260209005500 +0700">
     <title lang="vi">PHIM TRUYỆN: ĐẾN GIỜ ÁM SÁT - TẬP 3/28</title>
     <desc lang="vi">Chương trình này có thời lượng là 55 phút.</desc>
@@ -9338,6 +9500,51 @@
     <desc lang="vi">Doc (Season 2)</desc>
     <icon src="https://vnepg.site/logos/163.png" />
   </programme>
+  <programme start="20260211000000 +0700" stop="20260211020000 +0700" channel="axnhd">
+    <title lang="en">Mega Film Asia</title>
+  </programme>
+  <programme start="20260211020000 +0700" stop="20260211033000 +0700" channel="axnhd">
+    <title lang="en">Mega Film Asia</title>
+  </programme>
+  <programme start="20260211033000 +0700" stop="20260211050000 +0700" channel="axnhd">
+    <title lang="en">Mega Film Asia</title>
+  </programme>
+  <programme start="20260211050000 +0700" stop="20260211053000 +0700" channel="axnhd">
+    <title lang="en">Mujizat Masih Ada</title>
+  </programme>
+  <programme start="20260211053000 +0700" stop="20260211070000 +0700" channel="axnhd">
+    <title lang="en">Fokus Pagi</title>
+  </programme>
+  <programme start="20260211070000 +0700" stop="20260211090000 +0700" channel="axnhd">
+    <title lang="en">Merangkai Kisah Indah</title>
+  </programme>
+  <programme start="20260211090000 +0700" stop="20260211110000 +0700" channel="axnhd">
+    <title lang="en">Kisah Nyata Pagi</title>
+  </programme>
+  <programme start="20260211110000 +0700" stop="20260211120000 +0700" channel="axnhd">
+    <title lang="en">Hot Kiss</title>
+  </programme>
+  <programme start="20260211120000 +0700" stop="20260211123000 +0700" channel="axnhd">
+    <title lang="en">Patroli Siang</title>
+  </programme>
+  <programme start="20260211123000 +0700" stop="20260211130000 +0700" channel="axnhd">
+    <title lang="en">Fokus Siang</title>
+  </programme>
+  <programme start="20260211130000 +0700" stop="20260211150000 +0700" channel="axnhd">
+    <title lang="en">Kisah Nyata Siang</title>
+  </programme>
+  <programme start="20260211150000 +0700" stop="20260211170000 +0700" channel="axnhd">
+    <title lang="en">Kisah Nyata Sore Spesial</title>
+  </programme>
+  <programme start="20260211170000 +0700" stop="20260211190000 +0700" channel="axnhd">
+    <title lang="en">Merangkai Kisah Indah</title>
+  </programme>
+  <programme start="20260211190000 +0700" stop="20260211213000 +0700" channel="axnhd">
+    <title lang="en">Int'l Friendly Match Timnas U17</title>
+  </programme>
+  <programme start="20260211213000 +0700" stop="20260212013000 +0700" channel="axnhd">
+    <title lang="en">D'Academy S7</title>
+  </programme>
   <programme channel="axnhd" channel-number="71" start="20260209001000 +0700" stop="20260209010500 +0700">
     <title lang="vi">BÁC SĨ (PHẦN 2) - DOC (SEASON 2)</title>
     <desc lang="vi">Quá khứ của Amy quay trở lại ám ảnh cô khi người cha tuyệt vọng hy sinh tất cả để đảm bảo ca ghép tim cho con gái mình.</desc>
@@ -11503,6 +11710,110 @@
     <icon src="https://s3-ap-southeast-1.amazonaws.com/ams-astro/production/images/10000542X731660.jpg" />
     <category lang="vi">Thực tế &amp;amp; Tài liệu</category>
     <category lang="vi">Phim tài liệu</category>
+  </programme>
+  <programme start="20260211004000 +0700" stop="20260211013000 +0700" channel="bbcearth">
+    <title lang="en">Islands Of The Pacific</title>
+    <episode-num system="onscreen">S2 E3</episode-num>
+  </programme>
+  <programme start="20260211013000 +0700" stop="20260211022000 +0700" channel="bbcearth">
+    <title lang="en">Into The Congo</title>
+    <episode-num system="onscreen">S1 E3</episode-num>
+  </programme>
+  <programme start="20260211022000 +0700" stop="20260211031000 +0700" channel="bbcearth">
+    <title lang="en">Extreme Fishing</title>
+    <episode-num system="onscreen">S3 E10</episode-num>
+  </programme>
+  <programme start="20260211031000 +0700" stop="20260211040500 +0700" channel="bbcearth">
+    <title lang="en">Cheetah Family &amp; Me</title>
+    <episode-num system="onscreen">S1 E2</episode-num>
+  </programme>
+  <programme start="20260211040500 +0700" stop="20260211045500 +0700" channel="bbcearth">
+    <title lang="en">Into The Congo</title>
+    <episode-num system="onscreen">S1 E3</episode-num>
+  </programme>
+  <programme start="20260211045500 +0700" stop="20260211060000 +0700" channel="bbcearth">
+    <title lang="en">Expedition Killer Whale</title>
+    <episode-num system="onscreen">E1</episode-num>
+  </programme>
+  <programme start="20260211060000 +0700" stop="20260211065500 +0700" channel="bbcearth">
+    <title lang="en">Islands Of The Pacific</title>
+    <episode-num system="onscreen">S2 E3</episode-num>
+  </programme>
+  <programme start="20260211065500 +0700" stop="20260211075000 +0700" channel="bbcearth">
+    <title lang="en">Into The Congo</title>
+    <episode-num system="onscreen">S1 E3</episode-num>
+  </programme>
+  <programme start="20260211075000 +0700" stop="20260211084000 +0700" channel="bbcearth">
+    <title lang="en">Extreme Fishing</title>
+    <episode-num system="onscreen">S3 E10</episode-num>
+  </programme>
+  <programme start="20260211084000 +0700" stop="20260211093500 +0700" channel="bbcearth">
+    <title lang="en">Extreme Treks</title>
+    <episode-num system="onscreen">S4 E4</episode-num>
+  </programme>
+  <programme start="20260211093500 +0700" stop="20260211103000 +0700" channel="bbcearth">
+    <title lang="en">Islands Of The Pacific</title>
+    <episode-num system="onscreen">S2 E3</episode-num>
+  </programme>
+  <programme start="20260211103000 +0700" stop="20260211113000 +0700" channel="bbcearth">
+    <title lang="en">Adventures In Spain</title>
+    <episode-num system="onscreen">S1 E1</episode-num>
+  </programme>
+  <programme start="20260211113000 +0700" stop="20260211122000 +0700" channel="bbcearth">
+    <title lang="en">Into The Congo</title>
+    <episode-num system="onscreen">S1 E3</episode-num>
+  </programme>
+  <programme start="20260211122000 +0700" stop="20260211132000 +0700" channel="bbcearth">
+    <title lang="en">Planet Earth</title>
+    <episode-num system="onscreen">S3 E4</episode-num>
+  </programme>
+  <programme start="20260211132000 +0700" stop="20260211142500 +0700" channel="bbcearth">
+    <title lang="en">Expedition Killer Whale</title>
+    <episode-num system="onscreen">E1</episode-num>
+  </programme>
+  <programme start="20260211142500 +0700" stop="20260211152500 +0700" channel="bbcearth">
+    <title lang="en">Adventures In Spain</title>
+    <episode-num system="onscreen">S1 E1</episode-num>
+  </programme>
+  <programme start="20260211152500 +0700" stop="20260211162000 +0700" channel="bbcearth">
+    <title lang="en">Islands Of The Pacific</title>
+    <episode-num system="onscreen">S2 E3</episode-num>
+  </programme>
+  <programme start="20260211162000 +0700" stop="20260211171000 +0700" channel="bbcearth">
+    <title lang="en">Extreme Fishing</title>
+    <episode-num system="onscreen">S3 E10</episode-num>
+  </programme>
+  <programme start="20260211171000 +0700" stop="20260211181500 +0700" channel="bbcearth">
+    <title lang="en">Expedition Killer Whale</title>
+    <episode-num system="onscreen">E1</episode-num>
+  </programme>
+  <programme start="20260211181500 +0700" stop="20260211191000 +0700" channel="bbcearth">
+    <title lang="en">Into The Congo</title>
+    <episode-num system="onscreen">S1 E3</episode-num>
+  </programme>
+  <programme start="20260211191000 +0700" stop="20260211200000 +0700" channel="bbcearth">
+    <title lang="en">Extreme Fishing</title>
+    <episode-num system="onscreen">S3 E11</episode-num>
+  </programme>
+  <programme start="20260211200000 +0700" stop="20260211210000 +0700" channel="bbcearth">
+    <title lang="en">Legendary Tigers Of India</title>
+    <episode-num system="onscreen">E1</episode-num>
+  </programme>
+  <programme start="20260211210000 +0700" stop="20260211215500 +0700" channel="bbcearth">
+    <title lang="en">Extreme Treks</title>
+    <episode-num system="onscreen">S4 E5</episode-num>
+  </programme>
+  <programme start="20260211215500 +0700" stop="20260211224500 +0700" channel="bbcearth">
+    <title lang="en">Engineering Repurposed</title>
+    <episode-num system="onscreen">E6</episode-num>
+  </programme>
+  <programme start="20260211224500 +0700" stop="20260211233500 +0700" channel="bbcearth">
+    <title lang="en">Extreme Fishing</title>
+    <episode-num system="onscreen">S3 E11</episode-num>
+  </programme>
+  <programme start="20260211233500 +0700" stop="20260212003500 +0700" channel="bbcearth">
+    <title lang="en">Legendary Tigers Of India</title>
+    <episode-num system="onscreen">E1</episode-num>
   </programme>
   <programme channel="bbcearth" channel-number="77" start="20260209000000 +0700" stop="20260209005500 +0700">
     <title lang="vi">THÁM HIỂM CONGO CÙNG BEN FOGLE - INTO THE CONGO WITH BEN FOGLE</title>
@@ -14248,6 +14559,123 @@
     <title lang="vi">NHỮNG GIAI ĐIỆU NGỐC NGHẾCH THỜI THƠ ẤU</title>
     <desc lang="vi">Baby Looney Tunes</desc>
     <icon src="https://www.diversetechgeek.com/wp-content/uploads/2021/09/cartoonito_logo.jpeg" />
+  </programme>
+  <programme start="20260211000000 +0700" stop="20260211010000 +0700" channel="boomerang">
+    <title lang="vi">Ella Giữa Những Vì Sao Xa</title>
+  </programme>
+  <programme start="20260211010000 +0700" stop="20260211020000 +0700" channel="boomerang">
+    <title lang="vi">Ella Giữa Những Vì Sao Xa</title>
+  </programme>
+  <programme start="20260211020000 +0700" stop="20260211030000 +0700" channel="boomerang">
+    <title lang="vi">Thỏ Con Dũng Cảm</title>
+  </programme>
+  <programme start="20260211030000 +0700" stop="20260211040000 +0700" channel="boomerang">
+    <title lang="vi">Thỏ Con Dũng Cảm</title>
+  </programme>
+  <programme start="20260211040000 +0700" stop="20260211050000 +0700" channel="boomerang">
+    <title lang="vi">Trang Trại Khủng Long</title>
+  </programme>
+  <programme start="20260211050000 +0700" stop="20260211060000 +0700" channel="boomerang">
+    <title lang="vi">Trang Trại Khủng Long</title>
+  </programme>
+  <programme start="20260211060000 +0700" stop="20260211070000 +0700" channel="boomerang">
+    <title lang="vi">Những Giai Điệu Ngốc Nghếch Thời Thơ Ấu</title>
+  </programme>
+  <programme start="20260211070000 +0700" stop="20260211073000 +0700" channel="boomerang">
+    <title lang="vi">Ban Nhạc Rock Nhí</title>
+  </programme>
+  <programme start="20260211073000 +0700" stop="20260211080000 +0700" channel="boomerang">
+    <title lang="vi">Alice Và Lewis</title>
+  </programme>
+  <programme start="20260211080000 +0700" stop="20260211083000 +0700" channel="boomerang">
+    <title lang="vi">Đội Chế Tạo Mecha</title>
+  </programme>
+  <programme start="20260211083000 +0700" stop="20260211090000 +0700" channel="boomerang">
+    <title lang="vi">Gấu Xám Và Những Chú Chuột Lemmut</title>
+  </programme>
+  <programme start="20260211090000 +0700" stop="20260211093000 +0700" channel="boomerang">
+    <title lang="vi">Gấu Xám Và Những Chú Chuột Lemmut</title>
+  </programme>
+  <programme start="20260211093000 +0700" stop="20260211100000 +0700" channel="boomerang">
+    <title lang="vi">Những Giai Điệu Ngốc Nghếch Thời Thơ Ấu</title>
+  </programme>
+  <programme start="20260211100000 +0700" stop="20260211103000 +0700" channel="boomerang">
+    <title lang="vi">Biệt Đội Xe Dơi</title>
+  </programme>
+  <programme start="20260211103000 +0700" stop="20260211110000 +0700" channel="boomerang">
+    <title lang="vi">Tom Biết Nói: Tổ Đội Anh Hùng</title>
+  </programme>
+  <programme start="20260211110000 +0700" stop="20260211113000 +0700" channel="boomerang">
+    <title lang="vi">Chương Trình Tom Và Jerry</title>
+  </programme>
+  <programme start="20260211113000 +0700" stop="20260211120000 +0700" channel="boomerang">
+    <title lang="vi">Dorothy Và Phù Thủy Xứ Oz</title>
+  </programme>
+  <programme start="20260211120000 +0700" stop="20260211123000 +0700" channel="boomerang">
+    <title lang="vi">Chú Nhện Lucas</title>
+  </programme>
+  <programme start="20260211123000 +0700" stop="20260211130000 +0700" channel="boomerang">
+    <title lang="vi">Ban Nhạc Rock Nhí</title>
+  </programme>
+  <programme start="20260211130000 +0700" stop="20260211133000 +0700" channel="boomerang">
+    <title lang="vi">Những Giai Điệu Ngốc Nghếch Thời Thơ Ấu</title>
+  </programme>
+  <programme start="20260211133000 +0700" stop="20260211140000 +0700" channel="boomerang">
+    <title lang="vi">Đội Thợ Xây Của Thỏ Bugs</title>
+  </programme>
+  <programme start="20260211140000 +0700" stop="20260211143000 +0700" channel="boomerang">
+    <title lang="vi">Biệt Đội Xe Dơi</title>
+  </programme>
+  <programme start="20260211143000 +0700" stop="20260211150000 +0700" channel="boomerang">
+    <title lang="vi">Chương Trình Tom Và Jerry</title>
+  </programme>
+  <programme start="20260211150000 +0700" stop="20260211153000 +0700" channel="boomerang">
+    <title lang="vi">Chương Trình Tom Và Jerry</title>
+  </programme>
+  <programme start="20260211153000 +0700" stop="20260211160000 +0700" channel="boomerang">
+    <title lang="vi">Gấu Xám Và Những Chú Chuột Lemmut</title>
+  </programme>
+  <programme start="20260211160000 +0700" stop="20260211163000 +0700" channel="boomerang">
+    <title lang="vi">Gấu Xám Và Những Chú Chuột Lemmut</title>
+  </programme>
+  <programme start="20260211163000 +0700" stop="20260211170000 +0700" channel="boomerang">
+    <title lang="vi">Alice Và Lewis</title>
+  </programme>
+  <programme start="20260211170000 +0700" stop="20260211173000 +0700" channel="boomerang">
+    <title lang="vi">Thế Giới Của Barney</title>
+  </programme>
+  <programme start="20260211173000 +0700" stop="20260211175500 +0700" channel="boomerang">
+    <title lang="vi">Đội Thợ Xây Của Thỏ Bugs</title>
+  </programme>
+  <programme start="20260211175500 +0700" stop="20260211180000 +0700" channel="boomerang">
+    <title lang="vi">Đội Thợ Xây Của Thỏ Bugs</title>
+  </programme>
+  <programme start="20260211180000 +0700" stop="20260211183000 +0700" channel="boomerang">
+    <title lang="vi">Đội Chế Tạo Mecha</title>
+  </programme>
+  <programme start="20260211183000 +0700" stop="20260211190000 +0700" channel="boomerang">
+    <title lang="vi">Biệt Đội Xe Dơi</title>
+  </programme>
+  <programme start="20260211190000 +0700" stop="20260211193000 +0700" channel="boomerang">
+    <title lang="vi">Những Giai Điệu Ngốc Nghếch Thời Thơ Ấu</title>
+  </programme>
+  <programme start="20260211193000 +0700" stop="20260211200000 +0700" channel="boomerang">
+    <title lang="vi">Những Giai Điệu Ngốc Nghếch Thời Thơ Ấu</title>
+  </programme>
+  <programme start="20260211200000 +0700" stop="20260211203000 +0700" channel="boomerang">
+    <title lang="vi">Gấu Xám Và Những Chú Chuột Lemmut</title>
+  </programme>
+  <programme start="20260211203000 +0700" stop="20260211210000 +0700" channel="boomerang">
+    <title lang="vi">Gấu Xám Và Những Chú Chuột Lemmut</title>
+  </programme>
+  <programme start="20260211210000 +0700" stop="20260211213000 +0700" channel="boomerang">
+    <title lang="vi">Đội Chế Tạo Mecha</title>
+  </programme>
+  <programme start="20260211213000 +0700" stop="20260211220000 +0700" channel="boomerang">
+    <title lang="vi">Đội Chế Tạo Mecha</title>
+  </programme>
+  <programme start="20260211220000 +0700" stop="20260211230000 +0700" channel="boomerang">
+    <title lang="vi">Đội Thợ Xây Của Thỏ Bugs</title>
   </programme>
   <channel id="boxhits">
     <display-name>Box Hits</display-name>
@@ -19226,6 +19654,87 @@
     <category lang="vi">Trẻ em</category>
     <category lang="vi">Hoạt hình</category>
   </programme>
+  <programme start="20260211000000 +0700" stop="20260211010000 +0700" channel="cartoonhd">
+    <title lang="vi">Chương Trình Thường Nhật</title>
+  </programme>
+  <programme start="20260211010000 +0700" stop="20260211020000 +0700" channel="cartoonhd">
+    <title lang="vi">Ben 10</title>
+  </programme>
+  <programme start="20260211020000 +0700" stop="20260211030000 +0700" channel="cartoonhd">
+    <title lang="vi">Courage, Chú Chó Nhút Nhát</title>
+  </programme>
+  <programme start="20260211030000 +0700" stop="20260211040000 +0700" channel="cartoonhd">
+    <title lang="vi">Chương Trình Thường Nhật</title>
+  </programme>
+  <programme start="20260211040000 +0700" stop="20260211050000 +0700" channel="cartoonhd">
+    <title lang="vi">Ben 10</title>
+  </programme>
+  <programme start="20260211050000 +0700" stop="20260211060000 +0700" channel="cartoonhd">
+    <title lang="vi">Biệt Đội Thiếu Niên Titan Xuất Kích!</title>
+  </programme>
+  <programme start="20260211060000 +0700" stop="20260211061500 +0700" channel="cartoonhd">
+    <title lang="vi">Siêu Nhân Shiro</title>
+  </programme>
+  <programme start="20260211061500 +0700" stop="20260211071500 +0700" channel="cartoonhd">
+    <title lang="vi">Những Cô Gái Siêu Nhân</title>
+  </programme>
+  <programme start="20260211071500 +0700" stop="20260211081500 +0700" channel="cartoonhd">
+    <title lang="vi">Ngài Bean</title>
+  </programme>
+  <programme start="20260211081500 +0700" stop="20260211091500 +0700" channel="cartoonhd">
+    <title lang="vi">Phim Hoạt Hình Những Giai Điệu Ngốc Nghếch</title>
+  </programme>
+  <programme start="20260211091500 +0700" stop="20260211101500 +0700" channel="cartoonhd">
+    <title lang="vi">Chương Trình Tom Và Jerry</title>
+  </programme>
+  <programme start="20260211101500 +0700" stop="20260211104500 +0700" channel="cartoonhd">
+    <title lang="vi">Lamput</title>
+  </programme>
+  <programme start="20260211104500 +0700" stop="20260211111500 +0700" channel="cartoonhd">
+    <title lang="vi">Cao Thủ Karate Cừu</title>
+  </programme>
+  <programme start="20260211111500 +0700" stop="20260211121500 +0700" channel="cartoonhd">
+    <title lang="vi">Thế Giới Kì Diệu Của Gumball</title>
+  </programme>
+  <programme start="20260211121500 +0700" stop="20260211131500 +0700" channel="cartoonhd">
+    <title lang="vi">Ngài Bean</title>
+  </programme>
+  <programme start="20260211131500 +0700" stop="20260211141500 +0700" channel="cartoonhd">
+    <title lang="vi">Biệt Đội Thiếu Niên Titan Xuất Kích!</title>
+  </programme>
+  <programme start="20260211141500 +0700" stop="20260211144500 +0700" channel="cartoonhd">
+    <title lang="vi">Mechamato</title>
+  </programme>
+  <programme start="20260211144500 +0700" stop="20260211151500 +0700" channel="cartoonhd">
+    <title lang="vi">Clarence</title>
+  </programme>
+  <programme start="20260211151500 +0700" stop="20260211161500 +0700" channel="cartoonhd">
+    <title lang="vi">Thế Giới Kì Diệu Của Gumball</title>
+  </programme>
+  <programme start="20260211161500 +0700" stop="20260211171500 +0700" channel="cartoonhd">
+    <title lang="vi">Gấu Xám Và Những Chú Chuột Lemmut: Vòng Quanh Thế Giới</title>
+  </programme>
+  <programme start="20260211171500 +0700" stop="20260211181500 +0700" channel="cartoonhd">
+    <title lang="vi">Ngài Bean</title>
+  </programme>
+  <programme start="20260211181500 +0700" stop="20260211191500 +0700" channel="cartoonhd">
+    <title lang="vi">Biệt Đội Thiếu Niên Titan Xuất Kích!</title>
+  </programme>
+  <programme start="20260211191500 +0700" stop="20260211194500 +0700" channel="cartoonhd">
+    <title lang="vi">Thế Giới Kỳ Quặc Của Gumball</title>
+  </programme>
+  <programme start="20260211194500 +0700" stop="20260211201500 +0700" channel="cartoonhd">
+    <title lang="vi">Thế Giới Kì Diệu Của Gumball</title>
+  </programme>
+  <programme start="20260211201500 +0700" stop="20260211211500 +0700" channel="cartoonhd">
+    <title lang="vi">Chúng Tôi Đơn Giản Là Gấu</title>
+  </programme>
+  <programme start="20260211211500 +0700" stop="20260211221500 +0700" channel="cartoonhd">
+    <title lang="vi">Chúng Tôi Đơn Giản Là Gấu</title>
+  </programme>
+  <programme start="20260211221500 +0700" stop="20260211231500 +0700" channel="cartoonhd">
+    <title lang="vi">Giờ Phiêu Lưu</title>
+  </programme>
   <programme channel="cartoonhd" channel-number="86" start="20260209000000 +0700" stop="20260209010000 +0700">
     <title lang="vi">CHƯƠNG TRÌNH THƯỜNG NHẬT - REGULAR SHOW</title>
     <desc lang="vi">Anh hùng của chúng tôi phải lấy thức ăn cho BBQ.</desc>
@@ -21809,6 +22318,480 @@
     <icon src="https://s3-ap-southeast-1.amazonaws.com/ams-astro/production/images/10000572X888800.jpg" />
     <category lang="vi">Trẻ em</category>
     <category lang="vi">Mầm non</category>
+  </programme>
+  <programme start="20260211000000 +0700" stop="20260211001000 +0700" channel="cbeebies">
+    <title lang="vi">Những Em Bé Rối Teletubby</title>
+  </programme>
+  <programme start="20260211001000 +0700" stop="20260211001500 +0700" channel="cbeebies">
+    <title lang="vi">Yakka Dee</title>
+  </programme>
+  <programme start="20260211001500 +0700" stop="20260211002500 +0700" channel="cbeebies">
+    <title lang="vi">Messy Đến Okido</title>
+  </programme>
+  <programme start="20260211002500 +0700" stop="20260211004000 +0700" channel="cbeebies">
+    <title lang="vi">Mojo Đổi Xe</title>
+  </programme>
+  <programme start="20260211004000 +0700" stop="20260211004700 +0700" channel="cbeebies">
+    <title lang="vi">Bluey</title>
+  </programme>
+  <programme start="20260211004700 +0700" stop="20260211010000 +0700" channel="cbeebies">
+    <title lang="vi">Bluey</title>
+  </programme>
+  <programme start="20260211010000 +0700" stop="20260211010700 +0700" channel="cbeebies">
+    <title lang="vi">Chào Duggee</title>
+  </programme>
+  <programme start="20260211010700 +0700" stop="20260211011500 +0700" channel="cbeebies">
+    <title lang="vi">Chào Duggee</title>
+  </programme>
+  <programme start="20260211011500 +0700" stop="20260211012200 +0700" channel="cbeebies">
+    <title lang="vi">Câu Lạc Bộ Sóc Của Duggee</title>
+  </programme>
+  <programme start="20260211012200 +0700" stop="20260211013000 +0700" channel="cbeebies">
+    <title lang="vi">Câu Lạc Bộ Sóc Của Duggee</title>
+  </programme>
+  <programme start="20260211013000 +0700" stop="20260211014500 +0700" channel="cbeebies">
+    <title lang="vi">Tiến Lên Phi Đội Máy Bay</title>
+  </programme>
+  <programme start="20260211014500 +0700" stop="20260211015200 +0700" channel="cbeebies">
+    <title lang="vi">Bluey</title>
+  </programme>
+  <programme start="20260211015200 +0700" stop="20260211020000 +0700" channel="cbeebies">
+    <title lang="vi">Bluey</title>
+  </programme>
+  <programme start="20260211020000 +0700" stop="20260211020700 +0700" channel="cbeebies">
+    <title lang="vi">Bluey</title>
+  </programme>
+  <programme start="20260211020700 +0700" stop="20260211021500 +0700" channel="cbeebies">
+    <title lang="vi">Bluey</title>
+  </programme>
+  <programme start="20260211021500 +0700" stop="20260211023000 +0700" channel="cbeebies">
+    <title lang="vi">Phiêu Lưu Khắp Thế Giới Cùng Andy</title>
+  </programme>
+  <programme start="20260211023000 +0700" stop="20260211025500 +0700" channel="cbeebies">
+    <title lang="vi">Tháp Giờ Chơi</title>
+  </programme>
+  <programme start="20260211025500 +0700" stop="20260211030200 +0700" channel="cbeebies">
+    <title lang="vi">Chào Duggee</title>
+  </programme>
+  <programme start="20260211030200 +0700" stop="20260211030900 +0700" channel="cbeebies">
+    <title lang="vi">Chào Duggee</title>
+  </programme>
+  <programme start="20260211030900 +0700" stop="20260211031500 +0700" channel="cbeebies">
+    <title lang="vi">Chào Duggee</title>
+  </programme>
+  <programme start="20260211031500 +0700" stop="20260211032500 +0700" channel="cbeebies">
+    <title lang="vi">Tiến Lên Phi Đội Máy Bay</title>
+  </programme>
+  <programme start="20260211032500 +0700" stop="20260211034000 +0700" channel="cbeebies">
+    <title lang="vi">Tiến Lên Phi Đội Máy Bay</title>
+  </programme>
+  <programme start="20260211034000 +0700" stop="20260211035000 +0700" channel="cbeebies">
+    <title lang="vi">Thomas Và Những Người Bạn</title>
+  </programme>
+  <programme start="20260211035000 +0700" stop="20260211035700 +0700" channel="cbeebies">
+    <title lang="vi">Sarah Và Vịt</title>
+  </programme>
+  <programme start="20260211035700 +0700" stop="20260211040500 +0700" channel="cbeebies">
+    <title lang="vi">Sarah Và Vịt</title>
+  </programme>
+  <programme start="20260211040500 +0700" stop="20260211041100 +0700" channel="cbeebies">
+    <title lang="vi">Stan Đa Tài</title>
+  </programme>
+  <programme start="20260211041100 +0700" stop="20260211042000 +0700" channel="cbeebies">
+    <title lang="vi">Stan Đa Tài</title>
+  </programme>
+  <programme start="20260211042000 +0700" stop="20260211042500 +0700" channel="cbeebies">
+    <title lang="vi">Nhà Số 1 Đại Lộ Newton</title>
+  </programme>
+  <programme start="20260211042500 +0700" stop="20260211043800 +0700" channel="cbeebies">
+    <title lang="vi">Jojo Và Bà</title>
+  </programme>
+  <programme start="20260211043800 +0700" stop="20260211044500 +0700" channel="cbeebies">
+    <title lang="vi">Bluey</title>
+  </programme>
+  <programme start="20260211044500 +0700" stop="20260211045000 +0700" channel="cbeebies">
+    <title lang="vi">Bluey</title>
+  </programme>
+  <programme start="20260211045000 +0700" stop="20260211050000 +0700" channel="cbeebies">
+    <title lang="vi">Bluey</title>
+  </programme>
+  <programme start="20260211050000 +0700" stop="20260211050700 +0700" channel="cbeebies">
+    <title lang="vi">Chào Duggee</title>
+  </programme>
+  <programme start="20260211050700 +0700" stop="20260211051400 +0700" channel="cbeebies">
+    <title lang="vi">Chào Duggee</title>
+  </programme>
+  <programme start="20260211051400 +0700" stop="20260211052000 +0700" channel="cbeebies">
+    <title lang="vi">Câu Lạc Bộ Sóc Của Duggee</title>
+  </programme>
+  <programme start="20260211052000 +0700" stop="20260211053000 +0700" channel="cbeebies">
+    <title lang="vi">Tiến Lên Phi Đội Máy Bay</title>
+  </programme>
+  <programme start="20260211053000 +0700" stop="20260211053500 +0700" channel="cbeebies">
+    <title lang="vi">Rễ Cây Và Quả</title>
+  </programme>
+  <programme start="20260211053500 +0700" stop="20260211054500 +0700" channel="cbeebies">
+    <title lang="vi">Rễ Cây Và Quả</title>
+  </programme>
+  <programme start="20260211054500 +0700" stop="20260211055200 +0700" channel="cbeebies">
+    <title lang="vi">Khoai Tây Siêu Phàm</title>
+  </programme>
+  <programme start="20260211055200 +0700" stop="20260211060000 +0700" channel="cbeebies">
+    <title lang="vi">Khoai Tây Siêu Phàm</title>
+  </programme>
+  <programme start="20260211060000 +0700" stop="20260211061000 +0700" channel="cbeebies">
+    <title lang="vi">Những Em Bé Rối Teletubby</title>
+  </programme>
+  <programme start="20260211061000 +0700" stop="20260211061500 +0700" channel="cbeebies">
+    <title lang="vi">Yakka Dee</title>
+  </programme>
+  <programme start="20260211061500 +0700" stop="20260211062500 +0700" channel="cbeebies">
+    <title lang="vi">Messy Đến Okido</title>
+  </programme>
+  <programme start="20260211062500 +0700" stop="20260211064000 +0700" channel="cbeebies">
+    <title lang="vi">Mojo Đổi Xe</title>
+  </programme>
+  <programme start="20260211064000 +0700" stop="20260211064700 +0700" channel="cbeebies">
+    <title lang="vi">Bluey</title>
+  </programme>
+  <programme start="20260211064700 +0700" stop="20260211070000 +0700" channel="cbeebies">
+    <title lang="vi">Bluey</title>
+  </programme>
+  <programme start="20260211070000 +0700" stop="20260211070700 +0700" channel="cbeebies">
+    <title lang="vi">Chào Duggee</title>
+  </programme>
+  <programme start="20260211070700 +0700" stop="20260211071500 +0700" channel="cbeebies">
+    <title lang="vi">Chào Duggee</title>
+  </programme>
+  <programme start="20260211071500 +0700" stop="20260211072200 +0700" channel="cbeebies">
+    <title lang="vi">Câu Lạc Bộ Sóc Của Duggee</title>
+  </programme>
+  <programme start="20260211072200 +0700" stop="20260211073000 +0700" channel="cbeebies">
+    <title lang="vi">Câu Lạc Bộ Sóc Của Duggee</title>
+  </programme>
+  <programme start="20260211073000 +0700" stop="20260211074500 +0700" channel="cbeebies">
+    <title lang="vi">Tiến Lên Phi Đội Máy Bay</title>
+  </programme>
+  <programme start="20260211074500 +0700" stop="20260211075200 +0700" channel="cbeebies">
+    <title lang="vi">Bluey</title>
+  </programme>
+  <programme start="20260211075200 +0700" stop="20260211080000 +0700" channel="cbeebies">
+    <title lang="vi">Bluey</title>
+  </programme>
+  <programme start="20260211080000 +0700" stop="20260211080700 +0700" channel="cbeebies">
+    <title lang="vi">Bluey</title>
+  </programme>
+  <programme start="20260211080700 +0700" stop="20260211081500 +0700" channel="cbeebies">
+    <title lang="vi">Bluey</title>
+  </programme>
+  <programme start="20260211081500 +0700" stop="20260211083000 +0700" channel="cbeebies">
+    <title lang="vi">Phiêu Lưu Khắp Thế Giới Cùng Andy</title>
+  </programme>
+  <programme start="20260211083000 +0700" stop="20260211085500 +0700" channel="cbeebies">
+    <title lang="vi">Tháp Giờ Chơi</title>
+  </programme>
+  <programme start="20260211085500 +0700" stop="20260211090200 +0700" channel="cbeebies">
+    <title lang="vi">Chào Duggee</title>
+  </programme>
+  <programme start="20260211090200 +0700" stop="20260211090900 +0700" channel="cbeebies">
+    <title lang="vi">Chào Duggee</title>
+  </programme>
+  <programme start="20260211090900 +0700" stop="20260211091500 +0700" channel="cbeebies">
+    <title lang="vi">Chào Duggee</title>
+  </programme>
+  <programme start="20260211091500 +0700" stop="20260211092500 +0700" channel="cbeebies">
+    <title lang="vi">Tiến Lên Phi Đội Máy Bay</title>
+  </programme>
+  <programme start="20260211092500 +0700" stop="20260211094000 +0700" channel="cbeebies">
+    <title lang="vi">Tiến Lên Phi Đội Máy Bay</title>
+  </programme>
+  <programme start="20260211094000 +0700" stop="20260211095000 +0700" channel="cbeebies">
+    <title lang="vi">Thomas Và Những Người Bạn</title>
+  </programme>
+  <programme start="20260211095000 +0700" stop="20260211095700 +0700" channel="cbeebies">
+    <title lang="vi">Sarah Và Vịt</title>
+  </programme>
+  <programme start="20260211095700 +0700" stop="20260211100500 +0700" channel="cbeebies">
+    <title lang="vi">Sarah Và Vịt</title>
+  </programme>
+  <programme start="20260211100500 +0700" stop="20260211101100 +0700" channel="cbeebies">
+    <title lang="vi">Stan Đa Tài</title>
+  </programme>
+  <programme start="20260211101100 +0700" stop="20260211102000 +0700" channel="cbeebies">
+    <title lang="vi">Stan Đa Tài</title>
+  </programme>
+  <programme start="20260211102000 +0700" stop="20260211102500 +0700" channel="cbeebies">
+    <title lang="vi">Nhà Số 1 Đại Lộ Newton</title>
+  </programme>
+  <programme start="20260211102500 +0700" stop="20260211103800 +0700" channel="cbeebies">
+    <title lang="vi">Jojo Và Bà</title>
+  </programme>
+  <programme start="20260211103800 +0700" stop="20260211104500 +0700" channel="cbeebies">
+    <title lang="vi">Bluey</title>
+  </programme>
+  <programme start="20260211104500 +0700" stop="20260211105000 +0700" channel="cbeebies">
+    <title lang="vi">Bluey</title>
+  </programme>
+  <programme start="20260211105000 +0700" stop="20260211110000 +0700" channel="cbeebies">
+    <title lang="vi">Bluey</title>
+  </programme>
+  <programme start="20260211110000 +0700" stop="20260211110700 +0700" channel="cbeebies">
+    <title lang="vi">Chào Duggee</title>
+  </programme>
+  <programme start="20260211110700 +0700" stop="20260211111400 +0700" channel="cbeebies">
+    <title lang="vi">Chào Duggee</title>
+  </programme>
+  <programme start="20260211111400 +0700" stop="20260211112000 +0700" channel="cbeebies">
+    <title lang="vi">Câu Lạc Bộ Sóc Của Duggee</title>
+  </programme>
+  <programme start="20260211112000 +0700" stop="20260211113000 +0700" channel="cbeebies">
+    <title lang="vi">Tiến Lên Phi Đội Máy Bay</title>
+  </programme>
+  <programme start="20260211113000 +0700" stop="20260211113500 +0700" channel="cbeebies">
+    <title lang="vi">Rễ Cây Và Quả</title>
+  </programme>
+  <programme start="20260211113500 +0700" stop="20260211114500 +0700" channel="cbeebies">
+    <title lang="vi">Rễ Cây Và Quả</title>
+  </programme>
+  <programme start="20260211114500 +0700" stop="20260211115200 +0700" channel="cbeebies">
+    <title lang="vi">Khoai Tây Siêu Phàm</title>
+  </programme>
+  <programme start="20260211115200 +0700" stop="20260211120000 +0700" channel="cbeebies">
+    <title lang="vi">Khoai Tây Siêu Phàm</title>
+  </programme>
+  <programme start="20260211120000 +0700" stop="20260211121000 +0700" channel="cbeebies">
+    <title lang="vi">Những Em Bé Rối Teletubby</title>
+  </programme>
+  <programme start="20260211121000 +0700" stop="20260211121500 +0700" channel="cbeebies">
+    <title lang="vi">Yakka Dee</title>
+  </programme>
+  <programme start="20260211121500 +0700" stop="20260211122500 +0700" channel="cbeebies">
+    <title lang="vi">Messy Đến Okido</title>
+  </programme>
+  <programme start="20260211122500 +0700" stop="20260211124000 +0700" channel="cbeebies">
+    <title lang="vi">Mojo Đổi Xe</title>
+  </programme>
+  <programme start="20260211124000 +0700" stop="20260211124700 +0700" channel="cbeebies">
+    <title lang="vi">Bluey</title>
+  </programme>
+  <programme start="20260211124700 +0700" stop="20260211130000 +0700" channel="cbeebies">
+    <title lang="vi">Bluey</title>
+  </programme>
+  <programme start="20260211130000 +0700" stop="20260211130700 +0700" channel="cbeebies">
+    <title lang="vi">Chào Duggee</title>
+  </programme>
+  <programme start="20260211130700 +0700" stop="20260211131500 +0700" channel="cbeebies">
+    <title lang="vi">Chào Duggee</title>
+  </programme>
+  <programme start="20260211131500 +0700" stop="20260211132200 +0700" channel="cbeebies">
+    <title lang="vi">Câu Lạc Bộ Sóc Của Duggee</title>
+  </programme>
+  <programme start="20260211132200 +0700" stop="20260211133000 +0700" channel="cbeebies">
+    <title lang="vi">Câu Lạc Bộ Sóc Của Duggee</title>
+  </programme>
+  <programme start="20260211133000 +0700" stop="20260211134500 +0700" channel="cbeebies">
+    <title lang="vi">Tiến Lên Phi Đội Máy Bay</title>
+  </programme>
+  <programme start="20260211134500 +0700" stop="20260211135200 +0700" channel="cbeebies">
+    <title lang="vi">Bluey</title>
+  </programme>
+  <programme start="20260211135200 +0700" stop="20260211140000 +0700" channel="cbeebies">
+    <title lang="vi">Bluey</title>
+  </programme>
+  <programme start="20260211140000 +0700" stop="20260211140700 +0700" channel="cbeebies">
+    <title lang="vi">Bluey</title>
+  </programme>
+  <programme start="20260211140700 +0700" stop="20260211141500 +0700" channel="cbeebies">
+    <title lang="vi">Bluey</title>
+  </programme>
+  <programme start="20260211141500 +0700" stop="20260211143000 +0700" channel="cbeebies">
+    <title lang="vi">Phiêu Lưu Khắp Thế Giới Cùng Andy</title>
+  </programme>
+  <programme start="20260211143000 +0700" stop="20260211145500 +0700" channel="cbeebies">
+    <title lang="vi">Tháp Giờ Chơi</title>
+  </programme>
+  <programme start="20260211145500 +0700" stop="20260211150200 +0700" channel="cbeebies">
+    <title lang="vi">Chào Duggee</title>
+  </programme>
+  <programme start="20260211150200 +0700" stop="20260211150900 +0700" channel="cbeebies">
+    <title lang="vi">Chào Duggee</title>
+  </programme>
+  <programme start="20260211150900 +0700" stop="20260211151500 +0700" channel="cbeebies">
+    <title lang="vi">Chào Duggee</title>
+  </programme>
+  <programme start="20260211151500 +0700" stop="20260211152500 +0700" channel="cbeebies">
+    <title lang="vi">Tiến Lên Phi Đội Máy Bay</title>
+  </programme>
+  <programme start="20260211152500 +0700" stop="20260211154000 +0700" channel="cbeebies">
+    <title lang="vi">Tiến Lên Phi Đội Máy Bay</title>
+  </programme>
+  <programme start="20260211154000 +0700" stop="20260211155000 +0700" channel="cbeebies">
+    <title lang="vi">Thomas Và Những Người Bạn</title>
+  </programme>
+  <programme start="20260211155000 +0700" stop="20260211155700 +0700" channel="cbeebies">
+    <title lang="vi">Sarah Và Vịt</title>
+  </programme>
+  <programme start="20260211155700 +0700" stop="20260211160500 +0700" channel="cbeebies">
+    <title lang="vi">Sarah Và Vịt</title>
+  </programme>
+  <programme start="20260211160500 +0700" stop="20260211161100 +0700" channel="cbeebies">
+    <title lang="vi">Stan Đa Tài</title>
+  </programme>
+  <programme start="20260211161100 +0700" stop="20260211162000 +0700" channel="cbeebies">
+    <title lang="vi">Stan Đa Tài</title>
+  </programme>
+  <programme start="20260211162000 +0700" stop="20260211162500 +0700" channel="cbeebies">
+    <title lang="vi">Nhà Số 1 Đại Lộ Newton</title>
+  </programme>
+  <programme start="20260211162500 +0700" stop="20260211163800 +0700" channel="cbeebies">
+    <title lang="vi">Jojo Và Bà</title>
+  </programme>
+  <programme start="20260211163800 +0700" stop="20260211164500 +0700" channel="cbeebies">
+    <title lang="vi">Bluey</title>
+  </programme>
+  <programme start="20260211164500 +0700" stop="20260211165000 +0700" channel="cbeebies">
+    <title lang="vi">Bluey</title>
+  </programme>
+  <programme start="20260211165000 +0700" stop="20260211170000 +0700" channel="cbeebies">
+    <title lang="vi">Bluey</title>
+  </programme>
+  <programme start="20260211170000 +0700" stop="20260211170700 +0700" channel="cbeebies">
+    <title lang="vi">Chào Duggee</title>
+  </programme>
+  <programme start="20260211170700 +0700" stop="20260211171400 +0700" channel="cbeebies">
+    <title lang="vi">Chào Duggee</title>
+  </programme>
+  <programme start="20260211171400 +0700" stop="20260211172000 +0700" channel="cbeebies">
+    <title lang="vi">Câu Lạc Bộ Sóc Của Duggee</title>
+  </programme>
+  <programme start="20260211172000 +0700" stop="20260211173000 +0700" channel="cbeebies">
+    <title lang="vi">Tiến Lên Phi Đội Máy Bay</title>
+  </programme>
+  <programme start="20260211173000 +0700" stop="20260211173500 +0700" channel="cbeebies">
+    <title lang="vi">Rễ Cây Và Quả</title>
+  </programme>
+  <programme start="20260211173500 +0700" stop="20260211174500 +0700" channel="cbeebies">
+    <title lang="vi">Rễ Cây Và Quả</title>
+  </programme>
+  <programme start="20260211174500 +0700" stop="20260211175200 +0700" channel="cbeebies">
+    <title lang="vi">Khoai Tây Siêu Phàm</title>
+  </programme>
+  <programme start="20260211175200 +0700" stop="20260211180000 +0700" channel="cbeebies">
+    <title lang="vi">Khoai Tây Siêu Phàm</title>
+  </programme>
+  <programme start="20260211180000 +0700" stop="20260211181000 +0700" channel="cbeebies">
+    <title lang="vi">Những Em Bé Rối Teletubby</title>
+  </programme>
+  <programme start="20260211181000 +0700" stop="20260211181500 +0700" channel="cbeebies">
+    <title lang="vi">Yakka Dee</title>
+  </programme>
+  <programme start="20260211181500 +0700" stop="20260211182500 +0700" channel="cbeebies">
+    <title lang="vi">Messy Đến Okido</title>
+  </programme>
+  <programme start="20260211182500 +0700" stop="20260211184000 +0700" channel="cbeebies">
+    <title lang="vi">Mojo Đổi Xe</title>
+  </programme>
+  <programme start="20260211184000 +0700" stop="20260211184700 +0700" channel="cbeebies">
+    <title lang="vi">Bluey</title>
+  </programme>
+  <programme start="20260211184700 +0700" stop="20260211190000 +0700" channel="cbeebies">
+    <title lang="vi">Bluey</title>
+  </programme>
+  <programme start="20260211190000 +0700" stop="20260211190700 +0700" channel="cbeebies">
+    <title lang="vi">Chào Duggee</title>
+  </programme>
+  <programme start="20260211190700 +0700" stop="20260211191500 +0700" channel="cbeebies">
+    <title lang="vi">Chào Duggee</title>
+  </programme>
+  <programme start="20260211191500 +0700" stop="20260211192200 +0700" channel="cbeebies">
+    <title lang="vi">Câu Lạc Bộ Sóc Của Duggee</title>
+  </programme>
+  <programme start="20260211192200 +0700" stop="20260211193000 +0700" channel="cbeebies">
+    <title lang="vi">Câu Lạc Bộ Sóc Của Duggee</title>
+  </programme>
+  <programme start="20260211193000 +0700" stop="20260211194500 +0700" channel="cbeebies">
+    <title lang="vi">Tiến Lên Phi Đội Máy Bay</title>
+  </programme>
+  <programme start="20260211194500 +0700" stop="20260211195200 +0700" channel="cbeebies">
+    <title lang="vi">Bluey</title>
+  </programme>
+  <programme start="20260211195200 +0700" stop="20260211200700 +0700" channel="cbeebies">
+    <title lang="vi">Bluey</title>
+  </programme>
+  <programme start="20260211200700 +0700" stop="20260211201500 +0700" channel="cbeebies">
+    <title lang="vi">Bluey</title>
+  </programme>
+  <programme start="20260211201500 +0700" stop="20260211203000 +0700" channel="cbeebies">
+    <title lang="vi">Phiêu Lưu Khắp Thế Giới Cùng Andy</title>
+  </programme>
+  <programme start="20260211203000 +0700" stop="20260211205500 +0700" channel="cbeebies">
+    <title lang="vi">Tháp Giờ Chơi</title>
+  </programme>
+  <programme start="20260211205500 +0700" stop="20260211210200 +0700" channel="cbeebies">
+    <title lang="vi">Chào Duggee</title>
+  </programme>
+  <programme start="20260211210200 +0700" stop="20260211210900 +0700" channel="cbeebies">
+    <title lang="vi">Chào Duggee</title>
+  </programme>
+  <programme start="20260211210900 +0700" stop="20260211211500 +0700" channel="cbeebies">
+    <title lang="vi">Chào Duggee</title>
+  </programme>
+  <programme start="20260211211500 +0700" stop="20260211212500 +0700" channel="cbeebies">
+    <title lang="vi">Tiến Lên Phi Đội Máy Bay</title>
+  </programme>
+  <programme start="20260211212500 +0700" stop="20260211214000 +0700" channel="cbeebies">
+    <title lang="vi">Tiến Lên Phi Đội Máy Bay</title>
+  </programme>
+  <programme start="20260211214000 +0700" stop="20260211215000 +0700" channel="cbeebies">
+    <title lang="vi">Thomas Và Những Người Bạn</title>
+  </programme>
+  <programme start="20260211215000 +0700" stop="20260211215700 +0700" channel="cbeebies">
+    <title lang="vi">Sarah Và Vịt</title>
+  </programme>
+  <programme start="20260211215700 +0700" stop="20260211220500 +0700" channel="cbeebies">
+    <title lang="vi">Sarah Và Vịt</title>
+  </programme>
+  <programme start="20260211220500 +0700" stop="20260211221100 +0700" channel="cbeebies">
+    <title lang="vi">Stan Đa Tài</title>
+  </programme>
+  <programme start="20260211221100 +0700" stop="20260211222000 +0700" channel="cbeebies">
+    <title lang="vi">Stan Đa Tài</title>
+  </programme>
+  <programme start="20260211222000 +0700" stop="20260211222500 +0700" channel="cbeebies">
+    <title lang="vi">Nhà Số 1 Đại Lộ Newton</title>
+  </programme>
+  <programme start="20260211222500 +0700" stop="20260211223800 +0700" channel="cbeebies">
+    <title lang="vi">Jojo Và Bà</title>
+  </programme>
+  <programme start="20260211223800 +0700" stop="20260211224500 +0700" channel="cbeebies">
+    <title lang="vi">Bluey</title>
+  </programme>
+  <programme start="20260211224500 +0700" stop="20260211225000 +0700" channel="cbeebies">
+    <title lang="vi">Bluey</title>
+  </programme>
+  <programme start="20260211225000 +0700" stop="20260211230000 +0700" channel="cbeebies">
+    <title lang="vi">Bluey</title>
+  </programme>
+  <programme start="20260211230000 +0700" stop="20260211230700 +0700" channel="cbeebies">
+    <title lang="vi">Chào Duggee</title>
+  </programme>
+  <programme start="20260211230700 +0700" stop="20260211231400 +0700" channel="cbeebies">
+    <title lang="vi">Chào Duggee</title>
+  </programme>
+  <programme start="20260211231400 +0700" stop="20260211232000 +0700" channel="cbeebies">
+    <title lang="vi">Câu Lạc Bộ Sóc Của Duggee</title>
+  </programme>
+  <programme start="20260211232000 +0700" stop="20260211233000 +0700" channel="cbeebies">
+    <title lang="vi">Tiến Lên Phi Đội Máy Bay</title>
+  </programme>
+  <programme start="20260211233000 +0700" stop="20260211233500 +0700" channel="cbeebies">
+    <title lang="vi">Rễ Cây Và Quả</title>
+  </programme>
+  <programme start="20260211233500 +0700" stop="20260211234500 +0700" channel="cbeebies">
+    <title lang="vi">Rễ Cây Và Quả</title>
+  </programme>
+  <programme start="20260211234500 +0700" stop="20260211235200 +0700" channel="cbeebies">
+    <title lang="vi">Khoai Tây Siêu Phàm</title>
   </programme>
   <programme channel="cbeebies" channel-number="84" start="20260209000000 +0700" stop="20260209000700 +0700">
     <title lang="vi">CHÀO DUGGEE - HEY DUGGEE</title>
@@ -26189,6 +27172,42 @@
     <icon src="https://s3-ap-southeast-1.amazonaws.com/ams-astro/production/images/10000371X922592.jpg" />
     <category lang="vi">Phim</category>
     <category lang="vi">Kinh dị / Siêu nhiên</category>
+  </programme>
+  <programme start="20260211014900 +0700" stop="20260211032300 +0700" channel="cinemaxhd">
+    <title lang="en">Kill Switch</title>
+  </programme>
+  <programme start="20260211032300 +0700" stop="20260211051100 +0700" channel="cinemaxhd">
+    <title lang="en">Platinum</title>
+  </programme>
+  <programme start="20260211051100 +0700" stop="20260211065200 +0700" channel="cinemaxhd">
+    <title lang="en">Ticker</title>
+  </programme>
+  <programme start="20260211065200 +0700" stop="20260211091300 +0700" channel="cinemaxhd">
+    <title lang="en">Platinum</title>
+  </programme>
+  <programme start="20260211091300 +0700" stop="20260211105100 +0700" channel="cinemaxhd">
+    <title lang="en">Poker Face</title>
+  </programme>
+  <programme start="20260211105100 +0700" stop="20260211130300 +0700" channel="cinemaxhd">
+    <title lang="en">Platinum</title>
+  </programme>
+  <programme start="20260211130300 +0700" stop="20260211143800 +0700" channel="cinemaxhd">
+    <title lang="en">Good People</title>
+  </programme>
+  <programme start="20260211143800 +0700" stop="20260211163100 +0700" channel="cinemaxhd">
+    <title lang="en">Platinum</title>
+  </programme>
+  <programme start="20260211163100 +0700" stop="20260211181100 +0700" channel="cinemaxhd">
+    <title lang="en">Sleepless</title>
+  </programme>
+  <programme start="20260211181100 +0700" stop="20260211200100 +0700" channel="cinemaxhd">
+    <title lang="en">Platinum</title>
+  </programme>
+  <programme start="20260211200100 +0700" stop="20260211221700 +0700" channel="cinemaxhd">
+    <title lang="en">Occupation: Rainfall (?)</title>
+  </programme>
+  <programme start="20260211221700 +0700" stop="20260212003300 +0700" channel="cinemaxhd">
+    <title lang="en">Platinum</title>
   </programme>
   <programme channel="cinemaxhd" channel-number="73" start="20260209012500 +0700" stop="20260209022000 +0700">
     <title lang="vi">ĐẾ CHẾ ĐƯỜNG LÁT VÁN 4 - BOARDWALK EMPIRE S4</title>
@@ -35211,6 +36230,96 @@
     <category lang="vi">Thực tế &amp;amp; Tài liệu</category>
     <category lang="vi">Phim tài liệu</category>
   </programme>
+  <programme start="20260211002000 +0700" stop="20260211011000 +0700" channel="discoveryasiahd">
+    <title lang="vi">Sản Xuất Tại Đài Loan</title>
+  </programme>
+  <programme start="20260211011000 +0700" stop="20260211020000 +0700" channel="discoveryasiahd">
+    <title lang="vi">Kỳ Quan Xứ Sở</title>
+  </programme>
+  <programme start="20260211020000 +0700" stop="20260211025000 +0700" channel="discoveryasiahd">
+    <title lang="vi">Nữ Đô Vật Sumo Nhật Bản</title>
+  </programme>
+  <programme start="20260211025000 +0700" stop="20260211034000 +0700" channel="discoveryasiahd">
+    <title lang="vi">Sản Xuất Tại Đài Loan</title>
+  </programme>
+  <programme start="20260211034000 +0700" stop="20260211043000 +0700" channel="discoveryasiahd">
+    <title lang="vi">Kỳ Quan Xứ Sở</title>
+  </programme>
+  <programme start="20260211043000 +0700" stop="20260211053000 +0700" channel="discoveryasiahd">
+    <title lang="vi">Làm Việc Lớn: Chèo Thuyền Kayak</title>
+  </programme>
+  <programme start="20260211053000 +0700" stop="20260211060000 +0700" channel="discoveryasiahd">
+    <title lang="vi">Đến Vùng Đông Bắc</title>
+  </programme>
+  <programme start="20260211060000 +0700" stop="20260211065000 +0700" channel="discoveryasiahd">
+    <title lang="vi">Đám Cưới Độc Lạ</title>
+  </programme>
+  <programme start="20260211065000 +0700" stop="20260211071500 +0700" channel="discoveryasiahd">
+    <title lang="vi">Đám Cưới Kiểu Bollywood</title>
+  </programme>
+  <programme start="20260211071500 +0700" stop="20260211074000 +0700" channel="discoveryasiahd">
+    <title lang="vi">Đám Cưới Kiểu Bollywood</title>
+  </programme>
+  <programme start="20260211074000 +0700" stop="20260211083000 +0700" channel="discoveryasiahd">
+    <title lang="vi">Giáo Dục Không Biên Giới</title>
+  </programme>
+  <programme start="20260211083000 +0700" stop="20260211092000 +0700" channel="discoveryasiahd">
+    <title lang="vi">Nữ Tay Lái Tử Thần</title>
+  </programme>
+  <programme start="20260211092000 +0700" stop="20260211101000 +0700" channel="discoveryasiahd">
+    <title lang="vi">Sản Xuất Tại Đài Loan</title>
+  </programme>
+  <programme start="20260211101000 +0700" stop="20260211110000 +0700" channel="discoveryasiahd">
+    <title lang="vi">Kỳ Quan Xứ Sở</title>
+  </programme>
+  <programme start="20260211110000 +0700" stop="20260211115000 +0700" channel="discoveryasiahd">
+    <title lang="vi">Đám Cưới Độc Lạ</title>
+  </programme>
+  <programme start="20260211115000 +0700" stop="20260211121500 +0700" channel="discoveryasiahd">
+    <title lang="vi">Đám Cưới Kiểu Bollywood</title>
+  </programme>
+  <programme start="20260211121500 +0700" stop="20260211124000 +0700" channel="discoveryasiahd">
+    <title lang="vi">Đám Cưới Kiểu Bollywood</title>
+  </programme>
+  <programme start="20260211124000 +0700" stop="20260211133000 +0700" channel="discoveryasiahd">
+    <title lang="vi">Giáo Dục Không Biên Giới</title>
+  </programme>
+  <programme start="20260211133000 +0700" stop="20260211142000 +0700" channel="discoveryasiahd">
+    <title lang="vi">Nữ Đô Vật Sumo Nhật Bản</title>
+  </programme>
+  <programme start="20260211142000 +0700" stop="20260211151000 +0700" channel="discoveryasiahd">
+    <title lang="vi">Nữ Tay Lái Tử Thần</title>
+  </programme>
+  <programme start="20260211151000 +0700" stop="20260211160000 +0700" channel="discoveryasiahd">
+    <title lang="vi">Sản Xuất Tại Đài Loan</title>
+  </programme>
+  <programme start="20260211160000 +0700" stop="20260211165000 +0700" channel="discoveryasiahd">
+    <title lang="vi">Sản Xuất Tại Đài Loan</title>
+  </programme>
+  <programme start="20260211165000 +0700" stop="20260211174000 +0700" channel="discoveryasiahd">
+    <title lang="vi">Kỳ Quan Xứ Sở</title>
+  </programme>
+  <programme start="20260211174000 +0700" stop="20260211183000 +0700" channel="discoveryasiahd">
+    <title lang="vi">Kỳ Quan Xứ Sở</title>
+  </programme>
+  <programme start="20260211183000 +0700" stop="20260211192000 +0700" channel="discoveryasiahd">
+    <title lang="vi">Người Đàm Phán</title>
+  </programme>
+  <programme start="20260211192000 +0700" stop="20260211201000 +0700" channel="discoveryasiahd">
+    <title lang="vi">Điểm Phá Giới Hạn</title>
+  </programme>
+  <programme start="20260211201000 +0700" stop="20260211210000 +0700" channel="discoveryasiahd">
+    <title lang="vi">Bưu Thiếp Của Pia</title>
+  </programme>
+  <programme start="20260211210000 +0700" stop="20260211215000 +0700" channel="discoveryasiahd">
+    <title lang="vi">Người Đàm Phán</title>
+  </programme>
+  <programme start="20260211215000 +0700" stop="20260211224000 +0700" channel="discoveryasiahd">
+    <title lang="vi">Đời Sống Xe Hơi</title>
+  </programme>
+  <programme start="20260211224000 +0700" stop="20260211233000 +0700" channel="discoveryasiahd">
+    <title lang="vi">Bưu Thiếp Của Pia</title>
+  </programme>
   <programme channel="discoveryasiahd" channel-number="81" start="20260209004500 +0700" stop="20260209011000 +0700">
     <title lang="vi">DU LỊCH BỤI Ở UTTARAKHAND - DUSTER ADVENTURES - UTTARAKHAND (S2)</title>
     <desc lang="vi">Chủ nhà của chúng tôi Shibani đã sẵn sàng bắt đầu chuyến đi tiếp theo của cô ấy và lần này cô ấy sẽ khám phá những ngọn núi, những đỉnh núi phủ tuyết và những dòng sông tràn ra ở Uttarakhand.</desc>
@@ -41918,6 +43027,195 @@
     <desc lang="vi">Trollhunters: Tales Of Arcadia</desc>
     <icon src="https://vnepg.site/logos/141.png" />
   </programme>
+  <programme start="20260211002000 +0700" stop="20260211004500 +0700" channel="dreamworks">
+    <title lang="vi">Thợ Săn Yêu Tinh</title>
+  </programme>
+  <programme start="20260211004500 +0700" stop="20260211011000 +0700" channel="dreamworks">
+    <title lang="vi">Quá Nhanh Quá Nguy Hiểm: Điệp Viên Siêu Tốc</title>
+  </programme>
+  <programme start="20260211011000 +0700" stop="20260211013500 +0700" channel="dreamworks">
+    <title lang="vi">Quá Nhanh Quá Nguy Hiểm: Điệp Viên Siêu Tốc</title>
+  </programme>
+  <programme start="20260211013500 +0700" stop="20260211020000 +0700" channel="dreamworks">
+    <title lang="vi">Quá Nhanh Quá Nguy Hiểm: Điệp Viên Siêu Tốc</title>
+  </programme>
+  <programme start="20260211020000 +0700" stop="20260211022500 +0700" channel="dreamworks">
+    <title lang="vi">Quỷ Lùn Tinh Nghịch: Giai Điệu Bất Tận</title>
+  </programme>
+  <programme start="20260211022500 +0700" stop="20260211025000 +0700" channel="dreamworks">
+    <title lang="vi">Chú Ngựa Spirit: Tự Do Rong Ruổi</title>
+  </programme>
+  <programme start="20260211025000 +0700" stop="20260211031500 +0700" channel="dreamworks">
+    <title lang="vi">Voltron: Vệ Binh Huyền Thoại</title>
+  </programme>
+  <programme start="20260211031500 +0700" stop="20260211032700 +0700" channel="dreamworks">
+    <title lang="vi">Cuộc Sống Của Riêng Tôi</title>
+  </programme>
+  <programme start="20260211032700 +0700" stop="20260211033900 +0700" channel="dreamworks">
+    <title lang="vi">Cuộc Sống Của Riêng Tôi</title>
+  </programme>
+  <programme start="20260211033900 +0700" stop="20260211035100 +0700" channel="dreamworks">
+    <title lang="vi">Cuộc Sống Của Riêng Tôi</title>
+  </programme>
+  <programme start="20260211035100 +0700" stop="20260211040500 +0700" channel="dreamworks">
+    <title lang="vi">Cuộc Sống Của Riêng Tôi</title>
+  </programme>
+  <programme start="20260211040500 +0700" stop="20260211041700 +0700" channel="dreamworks">
+    <title lang="vi">Fifi Và Các Loài Hoa</title>
+  </programme>
+  <programme start="20260211041700 +0700" stop="20260211043000 +0700" channel="dreamworks">
+    <title lang="vi">Fifi Và Các Loài Hoa</title>
+  </programme>
+  <programme start="20260211043000 +0700" stop="20260211044500 +0700" channel="dreamworks">
+    <title lang="vi">Fifi Và Các Loài Hoa</title>
+  </programme>
+  <programme start="20260211044500 +0700" stop="20260211050000 +0700" channel="dreamworks">
+    <title lang="vi">Fifi Và Các Loài Hoa</title>
+  </programme>
+  <programme start="20260211050000 +0700" stop="20260211051500 +0700" channel="dreamworks">
+    <title lang="vi">Fifi Và Các Loài Hoa</title>
+  </programme>
+  <programme start="20260211051500 +0700" stop="20260211053000 +0700" channel="dreamworks">
+    <title lang="vi">Fifi Và Các Loài Hoa</title>
+  </programme>
+  <programme start="20260211053000 +0700" stop="20260211054500 +0700" channel="dreamworks">
+    <title lang="vi">Fifi Và Các Loài Hoa</title>
+  </programme>
+  <programme start="20260211054500 +0700" stop="20260211060000 +0700" channel="dreamworks">
+    <title lang="vi">Fifi Và Các Loài Hoa</title>
+  </programme>
+  <programme start="20260211060000 +0700" stop="20260211061200 +0700" channel="dreamworks">
+    <title lang="vi">Olivia</title>
+  </programme>
+  <programme start="20260211061200 +0700" stop="20260211062500 +0700" channel="dreamworks">
+    <title lang="vi">Olivia</title>
+  </programme>
+  <programme start="20260211062500 +0700" stop="20260211065000 +0700" channel="dreamworks">
+    <title lang="vi">Biệt Đội Giải Cứu Rồng</title>
+  </programme>
+  <programme start="20260211065000 +0700" stop="20260211071500 +0700" channel="dreamworks">
+    <title lang="vi">Quỷ Lùn Tinh Nghịch: Giai Điệu Bất Tận</title>
+  </programme>
+  <programme start="20260211071500 +0700" stop="20260211074000 +0700" channel="dreamworks">
+    <title lang="vi">Quỷ Lùn Tinh Nghịch: Giai Điệu Bất Tận</title>
+  </programme>
+  <programme start="20260211074000 +0700" stop="20260211080500 +0700" channel="dreamworks">
+    <title lang="vi">Home: Những Chuyến Phiêu Lưu Cùng Tip Và Oh</title>
+  </programme>
+  <programme start="20260211080500 +0700" stop="20260211083000 +0700" channel="dreamworks">
+    <title lang="vi">Home: Những Chuyến Phiêu Lưu Cùng Tip Và Oh</title>
+  </programme>
+  <programme start="20260211083000 +0700" stop="20260211085500 +0700" channel="dreamworks">
+    <title lang="vi">Xe Tải Khủng Long</title>
+  </programme>
+  <programme start="20260211085500 +0700" stop="20260211092000 +0700" channel="dreamworks">
+    <title lang="vi">Xe Tải Khủng Long</title>
+  </programme>
+  <programme start="20260211092000 +0700" stop="20260211094500 +0700" channel="dreamworks">
+    <title lang="vi">Chú Kì Lân Nơi Biển Cả</title>
+  </programme>
+  <programme start="20260211094500 +0700" stop="20260211101000 +0700" channel="dreamworks">
+    <title lang="vi">Chú Kì Lân Nơi Biển Cả</title>
+  </programme>
+  <programme start="20260211101000 +0700" stop="20260211103500 +0700" channel="dreamworks">
+    <title lang="vi">Tiến Lên Nào, Cún Cưng!</title>
+  </programme>
+  <programme start="20260211103500 +0700" stop="20260211110000 +0700" channel="dreamworks">
+    <title lang="vi">Tiến Lên Nào, Cún Cưng!</title>
+  </programme>
+  <programme start="20260211110000 +0700" stop="20260211112500 +0700" channel="dreamworks">
+    <title lang="vi">Biệt Đội Zenko Tiến Lên</title>
+  </programme>
+  <programme start="20260211112500 +0700" stop="20260211115000 +0700" channel="dreamworks">
+    <title lang="vi">Biệt Đội Zenko Tiến Lên</title>
+  </programme>
+  <programme start="20260211115000 +0700" stop="20260211121500 +0700" channel="dreamworks">
+    <title lang="vi">Nhật Kí Tiên Sương</title>
+  </programme>
+  <programme start="20260211121500 +0700" stop="20260211124000 +0700" channel="dreamworks">
+    <title lang="vi">Nhật Kí Tiên Sương</title>
+  </programme>
+  <programme start="20260211124000 +0700" stop="20260211130500 +0700" channel="dreamworks">
+    <title lang="vi">Thủa Ban Đầu Của Nhà Crood</title>
+  </programme>
+  <programme start="20260211130500 +0700" stop="20260211133000 +0700" channel="dreamworks">
+    <title lang="vi">Thủa Ban Đầu Của Nhà Crood</title>
+  </programme>
+  <programme start="20260211133000 +0700" stop="20260211135500 +0700" channel="dreamworks">
+    <title lang="vi">Nhóc Trùm: Trở Lại Trong Nôi</title>
+  </programme>
+  <programme start="20260211135500 +0700" stop="20260211142000 +0700" channel="dreamworks">
+    <title lang="vi">Nhóc Trùm: Trở Lại Trong Nôi</title>
+  </programme>
+  <programme start="20260211142000 +0700" stop="20260211144500 +0700" channel="dreamworks">
+    <title lang="vi">Rồng: Cuộc Đua Tới Bờ Vực</title>
+  </programme>
+  <programme start="20260211144500 +0700" stop="20260211151000 +0700" channel="dreamworks">
+    <title lang="vi">Rồng: Cuộc Đua Tới Bờ Vực</title>
+  </programme>
+  <programme start="20260211151000 +0700" stop="20260211153500 +0700" channel="dreamworks">
+    <title lang="vi">Nhà Búp Bê Của Gabby</title>
+  </programme>
+  <programme start="20260211153500 +0700" stop="20260211160000 +0700" channel="dreamworks">
+    <title lang="vi">Nhà Búp Bê Của Gabby</title>
+  </programme>
+  <programme start="20260211160000 +0700" stop="20260211162500 +0700" channel="dreamworks">
+    <title lang="vi">Nhóc Trùm: Trở Lại Trong Nôi</title>
+  </programme>
+  <programme start="20260211162500 +0700" stop="20260211165000 +0700" channel="dreamworks">
+    <title lang="vi">Nhóc Trùm: Trở Lại Trong Nôi</title>
+  </programme>
+  <programme start="20260211165000 +0700" stop="20260211171500 +0700" channel="dreamworks">
+    <title lang="vi">Nhóc Trùm: Trở Lại Trong Nôi</title>
+  </programme>
+  <programme start="20260211171500 +0700" stop="20260211174000 +0700" channel="dreamworks">
+    <title lang="vi">Quá Nhanh Quá Nguy Hiểm: Điệp Viên Siêu Tốc</title>
+  </programme>
+  <programme start="20260211174000 +0700" stop="20260211180500 +0700" channel="dreamworks">
+    <title lang="vi">Quá Nhanh Quá Nguy Hiểm: Điệp Viên Siêu Tốc</title>
+  </programme>
+  <programme start="20260211180500 +0700" stop="20260211183000 +0700" channel="dreamworks">
+    <title lang="vi">Quá Nhanh Quá Nguy Hiểm: Điệp Viên Siêu Tốc</title>
+  </programme>
+  <programme start="20260211183000 +0700" stop="20260211185500 +0700" channel="dreamworks">
+    <title lang="vi">Kungfu Panda: Hiệp Sĩ Rồng</title>
+  </programme>
+  <programme start="20260211185500 +0700" stop="20260211192000 +0700" channel="dreamworks">
+    <title lang="vi">Kungfu Panda: Hiệp Sĩ Rồng</title>
+  </programme>
+  <programme start="20260211192000 +0700" stop="20260211194500 +0700" channel="dreamworks">
+    <title lang="vi">Kungfu Panda: Hiệp Sĩ Rồng</title>
+  </programme>
+  <programme start="20260211194500 +0700" stop="20260211201000 +0700" channel="dreamworks">
+    <title lang="vi">Thủa Ban Đầu Của Nhà Crood</title>
+  </programme>
+  <programme start="20260211201000 +0700" stop="20260211203500 +0700" channel="dreamworks">
+    <title lang="vi">Thủa Ban Đầu Của Nhà Crood</title>
+  </programme>
+  <programme start="20260211203500 +0700" stop="20260211210000 +0700" channel="dreamworks">
+    <title lang="vi">Thủa Ban Đầu Của Nhà Crood</title>
+  </programme>
+  <programme start="20260211210000 +0700" stop="20260211212500 +0700" channel="dreamworks">
+    <title lang="vi">Những Câu Chuyện Kinh Điển Của Đội Trưởng Quần Sịp</title>
+  </programme>
+  <programme start="20260211212500 +0700" stop="20260211215000 +0700" channel="dreamworks">
+    <title lang="vi">Những Câu Chuyện Kinh Điển Của Đội Trưởng Quần Sịp</title>
+  </programme>
+  <programme start="20260211215000 +0700" stop="20260211221500 +0700" channel="dreamworks">
+    <title lang="vi">Những Câu Chuyện Kinh Điển Của Đội Trưởng Quần Sịp</title>
+  </programme>
+  <programme start="20260211221500 +0700" stop="20260211224000 +0700" channel="dreamworks">
+    <title lang="vi">Rồng: Cuộc Đua Tới Bờ Vực</title>
+  </programme>
+  <programme start="20260211224000 +0700" stop="20260211230500 +0700" channel="dreamworks">
+    <title lang="vi">Rồng: Cuộc Đua Tới Bờ Vực</title>
+  </programme>
+  <programme start="20260211230500 +0700" stop="20260211233000 +0700" channel="dreamworks">
+    <title lang="vi">Rồng: Cuộc Đua Tới Bờ Vực</title>
+  </programme>
+  <programme start="20260211233000 +0700" stop="20260211235500 +0700" channel="dreamworks">
+    <title lang="vi">Thợ Săn Yêu Tinh</title>
+  </programme>
   <programme channel="dreamworks" channel-number="102" start="20260209002000 +0700" stop="20260209004500 +0700">
     <title lang="vi">ABOMINABLE AND THE INVISIBLE CITY</title>
     <desc lang="vi">Chương trình này có thời lượng là 25 phút.</desc>
@@ -45820,6 +47118,147 @@
     <title lang="vi">NỘI Y</title>
     <desc lang="vi">Lingerie</desc>
     <icon src="https://vnepg.site/logos/165.png" />
+  </programme>
+  <programme start="20260211001000 +0700" stop="20260211004000 +0700" channel="fashionhd">
+    <title lang="vi">Thời Trang Áo Tắm</title>
+  </programme>
+  <programme start="20260211004000 +0700" stop="20260211011000 +0700" channel="fashionhd">
+    <title lang="vi">Thời Trang Áo Tắm</title>
+  </programme>
+  <programme start="20260211011000 +0700" stop="20260211014000 +0700" channel="fashionhd">
+    <title lang="vi">Người Mẫu Hàng Đầu</title>
+  </programme>
+  <programme start="20260211014000 +0700" stop="20260211021000 +0700" channel="fashionhd">
+    <title lang="vi">Người Mẫu Hàng Đầu</title>
+  </programme>
+  <programme start="20260211021000 +0700" stop="20260211024000 +0700" channel="fashionhd">
+    <title lang="vi">Nội Y</title>
+  </programme>
+  <programme start="20260211024000 +0700" stop="20260211031000 +0700" channel="fashionhd">
+    <title lang="vi">Nội Y</title>
+  </programme>
+  <programme start="20260211031000 +0700" stop="20260211034000 +0700" channel="fashionhd">
+    <title lang="vi">Thời Trang Áo Tắm</title>
+  </programme>
+  <programme start="20260211034000 +0700" stop="20260211041000 +0700" channel="fashionhd">
+    <title lang="vi">Thời Trang Áo Tắm</title>
+  </programme>
+  <programme start="20260211041000 +0700" stop="20260211044000 +0700" channel="fashionhd">
+    <title lang="vi">Shoot Ảnh Đỉnh Cao</title>
+  </programme>
+  <programme start="20260211044000 +0700" stop="20260211051000 +0700" channel="fashionhd">
+    <title lang="vi">Shoot Ảnh Đỉnh Cao</title>
+  </programme>
+  <programme start="20260211051000 +0700" stop="20260211054000 +0700" channel="fashionhd">
+    <title lang="vi">Thời Trang Và Thể Thao</title>
+  </programme>
+  <programme start="20260211054000 +0700" stop="20260211061000 +0700" channel="fashionhd">
+    <title lang="vi">Thời Trang Và Thể Thao</title>
+  </programme>
+  <programme start="20260211061000 +0700" stop="20260211064000 +0700" channel="fashionhd">
+    <title lang="vi">Đẹp</title>
+  </programme>
+  <programme start="20260211064000 +0700" stop="20260211071000 +0700" channel="fashionhd">
+    <title lang="vi">Đẹp</title>
+  </programme>
+  <programme start="20260211071000 +0700" stop="20260211074000 +0700" channel="fashionhd">
+    <title lang="vi">Thời Trang Anh</title>
+  </programme>
+  <programme start="20260211074000 +0700" stop="20260211081000 +0700" channel="fashionhd">
+    <title lang="vi">Thời Trang Anh</title>
+  </programme>
+  <programme start="20260211081000 +0700" stop="20260211084000 +0700" channel="fashionhd">
+    <title lang="vi">Prada</title>
+  </programme>
+  <programme start="20260211084000 +0700" stop="20260211091000 +0700" channel="fashionhd">
+    <title lang="vi">Prada</title>
+  </programme>
+  <programme start="20260211091000 +0700" stop="20260211094000 +0700" channel="fashionhd">
+    <title lang="vi">Xem Nhiều Nhất</title>
+  </programme>
+  <programme start="20260211094000 +0700" stop="20260211101000 +0700" channel="fashionhd">
+    <title lang="vi">Xem Nhiều Nhất</title>
+  </programme>
+  <programme start="20260211101000 +0700" stop="20260211104000 +0700" channel="fashionhd">
+    <title lang="vi">Thời Trang Nhí</title>
+  </programme>
+  <programme start="20260211104000 +0700" stop="20260211111000 +0700" channel="fashionhd">
+    <title lang="vi">Thời Trang Nhí</title>
+  </programme>
+  <programme start="20260211111000 +0700" stop="20260211114000 +0700" channel="fashionhd">
+    <title lang="vi">Tuần Lễ Thời Trang Milan</title>
+  </programme>
+  <programme start="20260211114000 +0700" stop="20260211121000 +0700" channel="fashionhd">
+    <title lang="vi">Tuần Lễ Thời Trang Milan</title>
+  </programme>
+  <programme start="20260211121000 +0700" stop="20260211124000 +0700" channel="fashionhd">
+    <title lang="vi">Các Nhà Thiết Kế</title>
+  </programme>
+  <programme start="20260211124000 +0700" stop="20260211131000 +0700" channel="fashionhd">
+    <title lang="vi">Các Nhà Thiết Kế</title>
+  </programme>
+  <programme start="20260211131000 +0700" stop="20260211134000 +0700" channel="fashionhd">
+    <title lang="vi">Cô Dâu</title>
+  </programme>
+  <programme start="20260211134000 +0700" stop="20260211141000 +0700" channel="fashionhd">
+    <title lang="vi">Cô Dâu</title>
+  </programme>
+  <programme start="20260211141000 +0700" stop="20260211144000 +0700" channel="fashionhd">
+    <title lang="vi">Người Mẫu Hàng Đầu</title>
+  </programme>
+  <programme start="20260211144000 +0700" stop="20260211151000 +0700" channel="fashionhd">
+    <title lang="vi">Người Mẫu Hàng Đầu</title>
+  </programme>
+  <programme start="20260211151000 +0700" stop="20260211154000 +0700" channel="fashionhd">
+    <title lang="vi">Thời Trang Tuổi Teen</title>
+  </programme>
+  <programme start="20260211154000 +0700" stop="20260211161000 +0700" channel="fashionhd">
+    <title lang="vi">Thời Trang Tuổi Teen</title>
+  </programme>
+  <programme start="20260211161000 +0700" stop="20260211164000 +0700" channel="fashionhd">
+    <title lang="vi">Phim Thời Trang</title>
+  </programme>
+  <programme start="20260211164000 +0700" stop="20260211171000 +0700" channel="fashionhd">
+    <title lang="vi">Phim Thời Trang</title>
+  </programme>
+  <programme start="20260211171000 +0700" stop="20260211174000 +0700" channel="fashionhd">
+    <title lang="vi">Thời Trang Pháp</title>
+  </programme>
+  <programme start="20260211174000 +0700" stop="20260211181000 +0700" channel="fashionhd">
+    <title lang="vi">Thời Trang Pháp</title>
+  </programme>
+  <programme start="20260211181000 +0700" stop="20260211184000 +0700" channel="fashionhd">
+    <title lang="vi">Xem Nhiều Nhất</title>
+  </programme>
+  <programme start="20260211184000 +0700" stop="20260211191000 +0700" channel="fashionhd">
+    <title lang="vi">Xem Nhiều Nhất</title>
+  </programme>
+  <programme start="20260211191000 +0700" stop="20260211194000 +0700" channel="fashionhd">
+    <title lang="vi">Bản Tin Thời Trang</title>
+  </programme>
+  <programme start="20260211194000 +0700" stop="20260211201000 +0700" channel="fashionhd">
+    <title lang="vi">Bản Tin Thời Trang</title>
+  </programme>
+  <programme start="20260211201000 +0700" stop="20260211204000 +0700" channel="fashionhd">
+    <title lang="vi">Prada</title>
+  </programme>
+  <programme start="20260211204000 +0700" stop="20260211211000 +0700" channel="fashionhd">
+    <title lang="vi">Prada</title>
+  </programme>
+  <programme start="20260211211000 +0700" stop="20260211214000 +0700" channel="fashionhd">
+    <title lang="vi">Tạp Chí Thời Trang</title>
+  </programme>
+  <programme start="20260211214000 +0700" stop="20260211221000 +0700" channel="fashionhd">
+    <title lang="vi">Tạp Chí Thời Trang</title>
+  </programme>
+  <programme start="20260211221000 +0700" stop="20260211224000 +0700" channel="fashionhd">
+    <title lang="vi">Shoot Ảnh Đỉnh Cao</title>
+  </programme>
+  <programme start="20260211224000 +0700" stop="20260211231000 +0700" channel="fashionhd">
+    <title lang="vi">Shoot Ảnh Đỉnh Cao</title>
+  </programme>
+  <programme start="20260211231000 +0700" stop="20260211234000 +0700" channel="fashionhd">
+    <title lang="vi">Nội Y</title>
   </programme>
   <programme channel="fashionhd" channel-number="88" start="20260209001000 +0700" stop="20260209004000 +0700">
     <title lang="vi">THỜI TRANG ÁO TẮM - SWIMWEAR</title>
@@ -57832,6 +59271,45 @@
     <category lang="vi">Movie</category>
     <category lang="vi">Romance</category>
   </programme>
+  <programme start="20260211011200 +0700" stop="20260211030100 +0700" channel="hbofamily">
+    <title lang="en">Silver</title>
+  </programme>
+  <programme start="20260211030100 +0700" stop="20260211050100 +0700" channel="hbofamily">
+    <title lang="en">Pokemon Movie: Secrets Of...</title>
+  </programme>
+  <programme start="20260211050100 +0700" stop="20260211064100 +0700" channel="hbofamily">
+    <title lang="en">Silver</title>
+  </programme>
+  <programme start="20260211064100 +0700" stop="20260211083100 +0700" channel="hbofamily">
+    <title lang="en">Twelve</title>
+  </programme>
+  <programme start="20260211083100 +0700" stop="20260211101100 +0700" channel="hbofamily">
+    <title lang="en">Silver</title>
+  </programme>
+  <programme start="20260211101100 +0700" stop="20260211120000 +0700" channel="hbofamily">
+    <title lang="en">Labyrinthus</title>
+  </programme>
+  <programme start="20260211120000 +0700" stop="20260211135400 +0700" channel="hbofamily">
+    <title lang="en">Silver</title>
+  </programme>
+  <programme start="20260211135400 +0700" stop="20260211153600 +0700" channel="hbofamily">
+    <title lang="en">Code M</title>
+  </programme>
+  <programme start="20260211153600 +0700" stop="20260211172700 +0700" channel="hbofamily">
+    <title lang="en">Silver</title>
+  </programme>
+  <programme start="20260211172700 +0700" stop="20260211192000 +0700" channel="hbofamily">
+    <title lang="en">School Of Magical Animals 3</title>
+  </programme>
+  <programme start="20260211192000 +0700" stop="20260211210600 +0700" channel="hbofamily">
+    <title lang="en">Silver</title>
+  </programme>
+  <programme start="20260211210600 +0700" stop="20260211222400 +0700" channel="hbofamily">
+    <title lang="en">A Fairy Tale After All</title>
+  </programme>
+  <programme start="20260211222400 +0700" stop="20260212004100 +0700" channel="hbofamily">
+    <title lang="en">Silver</title>
+  </programme>
   <channel id="hbohd">
     <display-name>HBO</display-name>
     <icon src="https://vnepg.site/logos/129.png" />
@@ -58025,6 +59503,45 @@
     <icon src="https://s3-ap-southeast-1.amazonaws.com/ams-astro/production/images/10000018X922613.jpg" />
     <category lang="vi">Phim</category>
     <category lang="vi">Hoạt động</category>
+  </programme>
+  <programme start="20260211012200 +0700" stop="20260211031300 +0700" channel="hbohd">
+    <title lang="en">Gold</title>
+  </programme>
+  <programme start="20260211031300 +0700" stop="20260211062400 +0700" channel="hbohd">
+    <title lang="en">The Escape Of Prisoner 614</title>
+  </programme>
+  <programme start="20260211062400 +0700" stop="20260211080800 +0700" channel="hbohd">
+    <title lang="en">Platinum</title>
+  </programme>
+  <programme start="20260211080800 +0700" stop="20260211094600 +0700" channel="hbohd">
+    <title lang="en">The Contract</title>
+  </programme>
+  <programme start="20260211094600 +0700" stop="20260211112800 +0700" channel="hbohd">
+    <title lang="en">Gold</title>
+  </programme>
+  <programme start="20260211112800 +0700" stop="20260211130700 +0700" channel="hbohd">
+    <title lang="en">Goodbye Berlin</title>
+  </programme>
+  <programme start="20260211130700 +0700" stop="20260211144200 +0700" channel="hbohd">
+    <title lang="en">A Shine Of Rainbows</title>
+  </programme>
+  <programme start="20260211144200 +0700" stop="20260211163900 +0700" channel="hbohd">
+    <title lang="en">Platinum</title>
+  </programme>
+  <programme start="20260211163900 +0700" stop="20260211182000 +0700" channel="hbohd">
+    <title lang="en">Kill Switch</title>
+  </programme>
+  <programme start="20260211182000 +0700" stop="20260211203400 +0700" channel="hbohd">
+    <title lang="en">Gold</title>
+  </programme>
+  <programme start="20260211203400 +0700" stop="20260211223200 +0700" channel="hbohd">
+    <title lang="en">Forever Strong</title>
+  </programme>
+  <programme start="20260211223200 +0700" stop="20260211235400 +0700" channel="hbohd">
+    <title lang="en">Rock And Roll Christmas</title>
+  </programme>
+  <programme start="20260211235400 +0700" stop="20260212015000 +0700" channel="hbohd">
+    <title lang="en">Platinum</title>
   </programme>
   <programme channel="hbohd" channel-number="72" start="20260209005500 +0700" stop="20260209024000 +0700">
     <title lang="vi">CÂU LẠC BỘ VỢ CẢ - THE FIRST WIVES CLUB</title>
@@ -58733,6 +60250,45 @@
     <icon src="https://s3-ap-southeast-1.amazonaws.com/ams-astro/production/images/10000018X168805.jpg" />
     <category lang="vi">Movie</category>
     <category lang="vi">Animation</category>
+  </programme>
+  <programme start="20260211004600 +0700" stop="20260211024200 +0700" channel="hbohits">
+    <title lang="en">The Plot To Kill My Mother</title>
+  </programme>
+  <programme start="20260211024200 +0700" stop="20260211044000 +0700" channel="hbohits">
+    <title lang="en">Gold</title>
+  </programme>
+  <programme start="20260211044000 +0700" stop="20260211060300 +0700" channel="hbohits">
+    <title lang="en">Bert's Diary</title>
+  </programme>
+  <programme start="20260211060300 +0700" stop="20260211081400 +0700" channel="hbohits">
+    <title lang="en">Bandit</title>
+  </programme>
+  <programme start="20260211081400 +0700" stop="20260211103500 +0700" channel="hbohits">
+    <title lang="en">Platinum</title>
+  </programme>
+  <programme start="20260211103500 +0700" stop="20260211122200 +0700" channel="hbohits">
+    <title lang="en">Dating To Kill</title>
+  </programme>
+  <programme start="20260211122200 +0700" stop="20260211140300 +0700" channel="hbohits">
+    <title lang="en">Gold</title>
+  </programme>
+  <programme start="20260211140300 +0700" stop="20260211153800 +0700" channel="hbohits">
+    <title lang="en">Blueback</title>
+  </programme>
+  <programme start="20260211153800 +0700" stop="20260211172500 +0700" channel="hbohits">
+    <title lang="en">Apex</title>
+  </programme>
+  <programme start="20260211172500 +0700" stop="20260211192300 +0700" channel="hbohits">
+    <title lang="en">Platinum</title>
+  </programme>
+  <programme start="20260211192300 +0700" stop="20260211210300 +0700" channel="hbohits">
+    <title lang="en">Cycle</title>
+  </programme>
+  <programme start="20260211210300 +0700" stop="20260211230700 +0700" channel="hbohits">
+    <title lang="en">Gold</title>
+  </programme>
+  <programme start="20260211230700 +0700" stop="20260212003200 +0700" channel="hbohits">
+    <title lang="en">The Wedding Arrangement</title>
   </programme>
   <channel id="hgtv">
     <display-name>HGTV</display-name>
@@ -77178,6 +78734,69 @@
     <title lang="vi">IRON SQUAD W</title>
     <desc lang="vi">The fourth season of this Korean military survival show will determine the most elite female soldier. It brings together six Special Force units to compete in challenging missions across land, sea, and air. Top female reservists form teams of four to compete against one another. Witness how they battle to the end in front of six celebrity hosts!</desc>
     <icon src="https://vnepg.site/logos/167.png" />
+  </programme>
+  <programme start="20260211000000 +0700" stop="20260211011500 +0700" channel="kix">
+    <title lang="en">Maoshan Heavenly Master</title>
+  </programme>
+  <programme start="20260211011500 +0700" stop="20260211023500 +0700" channel="kix">
+    <title lang="en">Dragon Master: Dragon Spell</title>
+  </programme>
+  <programme start="20260211023500 +0700" stop="20260211040000 +0700" channel="kix">
+    <title lang="en">Iron Ball</title>
+    <episode-num system="onscreen">E3</episode-num>
+  </programme>
+  <programme start="20260211040000 +0700" stop="20260211045000 +0700" channel="kix">
+    <title lang="en">The Ultimate BROcation</title>
+    <episode-num system="onscreen">E5</episode-num>
+  </programme>
+  <programme start="20260211045000 +0700" stop="20260211061000 +0700" channel="kix">
+    <title lang="en">The Mask Of Shura Of Fire Cloud</title>
+  </programme>
+  <programme start="20260211061000 +0700" stop="20260211080000 +0700" channel="kix">
+    <title lang="en">Iron Squad W</title>
+    <episode-num system="onscreen">E2</episode-num>
+  </programme>
+  <programme start="20260211080000 +0700" stop="20260211091500 +0700" channel="kix">
+    <title lang="en">Maoshan Heavenly Master</title>
+  </programme>
+  <programme start="20260211091500 +0700" stop="20260211103500 +0700" channel="kix">
+    <title lang="en">Dragon Master: Dragon Spell</title>
+  </programme>
+  <programme start="20260211103500 +0700" stop="20260211120000 +0700" channel="kix">
+    <title lang="en">Iron Ball</title>
+    <episode-num system="onscreen">E3</episode-num>
+  </programme>
+  <programme start="20260211120000 +0700" stop="20260211125000 +0700" channel="kix">
+    <title lang="en">The Ultimate BROcation</title>
+    <episode-num system="onscreen">E5</episode-num>
+  </programme>
+  <programme start="20260211125000 +0700" stop="20260211141000 +0700" channel="kix">
+    <title lang="en">The Mask Of Shura Of Fire Cloud</title>
+  </programme>
+  <programme start="20260211141000 +0700" stop="20260211160000 +0700" channel="kix">
+    <title lang="en">Iron Squad W</title>
+    <episode-num system="onscreen">E2</episode-num>
+  </programme>
+  <programme start="20260211160000 +0700" stop="20260211171500 +0700" channel="kix">
+    <title lang="en">Maoshan Heavenly Master</title>
+  </programme>
+  <programme start="20260211171500 +0700" stop="20260211183500 +0700" channel="kix">
+    <title lang="en">Dragon Master: Dragon Spell</title>
+  </programme>
+  <programme start="20260211183500 +0700" stop="20260211200000 +0700" channel="kix">
+    <title lang="en">Iron Ball</title>
+    <episode-num system="onscreen">E3</episode-num>
+  </programme>
+  <programme start="20260211200000 +0700" stop="20260211215500 +0700" channel="kix">
+    <title lang="en">The Lost Bladesman</title>
+  </programme>
+  <programme start="20260211215500 +0700" stop="20260211230500 +0700" channel="kix">
+    <title lang="en">10 Fight 10</title>
+    <episode-num system="onscreen">S3 E1</episode-num>
+  </programme>
+  <programme start="20260211230500 +0700" stop="20260212011000 +0700" channel="kix">
+    <title lang="en">Iron Squad W</title>
+    <episode-num system="onscreen">E3</episode-num>
   </programme>
   <programme channel="kix" channel-number="104" start="20260209005500 +0700" stop="20260209023500 +0700">
     <title lang="vi">CUỘC CHIẾN TÀN KHỐC - CRUEL WAR</title>
