@@ -144,12 +144,13 @@ def update_playlist():
         base_name = os.path.splitext(OUTPUT_FILENAME)[0].replace('_', ' ').replace('-', ' ').title()
         
         valid_m3u_lines = [
-            header,
             "#=================================",
             f"# 📡 IPTV {base_name} Channels",
             f"# 🕒 Last Updated: {current_time}",
             f"# 📺 Channels Count : {alive_count}",
-            "#=================================="
+            "#==================================",
+            
+            header,
         ]
         
         # Thêm thông tin kênh vào file
