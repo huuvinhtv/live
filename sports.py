@@ -1,6 +1,6 @@
 import requests
 import os
-import sys  # Đã thêm sys để xử lý tiến trình thoát
+import sys
 import concurrent.futures
 from urllib3.util.retry import Retry
 from requests.adapters import HTTPAdapter
@@ -9,7 +9,7 @@ from datetime import datetime
 # --- CẤU HÌNH CHECKER ---
 TIMEOUT = 5
 MAX_WORKERS = 20
-OUTPUT_FILENAME = "sports.m3u" # ⬅️ Tên file đầu ra
+OUTPUT_FILENAME = "sports.m3u" # ⬅️ BẠN ĐỔI TÊN FILE M3U ĐẦU RA Ở ĐÂY
 
 def check_channel(url):
     """Kiểm tra link stream sâu (Deep Check) - Giả lập VLC/TV chuẩn xác nhất"""
@@ -34,11 +34,15 @@ def check_channel(url):
             response.close()
             return url, False
             
-        # Vòng 3: TỰ ĐỘNG GIẢI NÉN GZIP và đọc dòng đầu tiên
+        # Vòng 3: TỰ ĐỘNG GIẢI NÉN GZIP và ép kiểu dữ liệu an toàn
         first_line = ""
         try:
             for line in response.iter_lines(decode_unicode=True):
                 if line: 
+                    # FIX LỖI TYPEERROR: Ép dữ liệu bytes thành string nếu server trả về bytes thô
+                    if isinstance(line, bytes):
+                        line = line.decode('utf-8', errors='ignore')
+                    
                     first_line = line.strip()
                     break
         except Exception:
@@ -46,7 +50,7 @@ def check_channel(url):
         finally:
             response.close() 
             
-        # Kiểm tra nội dung
+        # Kiểm tra nội dung (Lúc này first_line chắc chắn 100% là string)
         if '.m3u8' in url or 'mpegurl' in content_type:
             if not first_line.startswith('#EXTM3U'):
                 return url, False
@@ -58,13 +62,17 @@ def check_channel(url):
     except requests.RequestException:
         return url, False
 
+
 def update_playlist():
+    # 1. Lấy URL M3U từ biến môi trường
     m3u_url = os.getenv('TV_M3U_SOURCE_URL')
     
+    # Dùng cho lúc test chạy file trực tiếp ở máy tính
     if not m3u_url:
         print("CẢNH BÁO: Chưa set TV_M3U_SOURCE_URL, sử dụng link mặc định để test.")
         m3u_url = "https://iptv-org.github.io/iptv/categories/sports.m3u"
         
+    # Cấu hình retry cho request tải file M3U gốc
     retry_strategy = Retry(
         total=3,
         backoff_factor=1,
@@ -77,6 +85,7 @@ def update_playlist():
     http.mount("http://", adapter)
 
     try:
+        # 2. Tải nội dung M3U
         print(f"Đang tải playlist từ: {m3u_url}...")
         response = http.get(
             m3u_url,
@@ -85,6 +94,7 @@ def update_playlist():
         )
         response.raise_for_status()
         
+        # 3. Phân tích nội dung M3U
         lines = response.text.splitlines()
         header = "#EXTM3U"
         channels = [] 
@@ -100,6 +110,9 @@ def update_playlist():
                 channels.append((current_extinf, line))
                 current_extinf = None
 
+        print(f"Tổng số kênh ban đầu: {len(channels)}")
+
+        # 4. Lọc bỏ các kênh trùng lặp link
         unique_channels = []
         seen_urls = set()
         for extinf, url in channels:
@@ -107,8 +120,10 @@ def update_playlist():
                 seen_urls.add(url)
                 unique_channels.append((extinf, url))
                 
+        print(f"Đã lọc bỏ {len(channels) - len(unique_channels)} kênh trùng lặp.")
         print(f"Bắt đầu kiểm tra sâu {len(unique_channels)} kênh bằng đa luồng...\n")
 
+        # 5. Kiểm tra đa luồng các link
         urls = [c[1] for c in unique_channels]
         check_results = {}
         
@@ -120,10 +135,12 @@ def update_playlist():
                 if is_alive:
                     print(f"[🟢 SỐNG] {url}")
 
+        # 6. Tái tạo lại nội dung M3U và tạo HEADER TỰ ĐỘNG
         alive_channels_list = [(extinf, url) for extinf, url in unique_channels if check_results.get(url)]
         alive_count = len(alive_channels_list)
         current_time = datetime.now().strftime("%Y-%m-%d %I:%M:%S %p")
         
+        # Tự động tạo tên list (VD: "sports.m3u" -> "Sports")
         base_name = os.path.splitext(OUTPUT_FILENAME)[0].replace('_', ' ').replace('-', ' ').title()
         
         valid_m3u_lines = [
@@ -135,6 +152,7 @@ def update_playlist():
             "#=================================="
         ]
         
+        # Thêm thông tin kênh vào file
         for extinf, url in alive_channels_list:
             if extinf:
                 valid_m3u_lines.append(extinf)
@@ -142,6 +160,7 @@ def update_playlist():
 
         final_m3u_content = "\n".join(valid_m3u_lines) + "\n"
 
+        # 7. Ghi ra file
         output_path = os.path.join(os.getcwd(), OUTPUT_FILENAME)
         print(f"\nĐang ghi ra file: {output_path}")
         
@@ -158,6 +177,7 @@ def update_playlist():
                 
             print(f"✅ Đã cập nhật thành công {OUTPUT_FILENAME}")
             print(f"📊 Kênh SỐNG/TỔNG: {alive_count}/{len(unique_channels)}")
+            print(f"📦 Dung lượng file: {file_size} bytes")
             
         except Exception as e:
             print(f"Lỗi ghi file {output_path}: {str(e)}")
