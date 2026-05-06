@@ -8,10 +8,10 @@ from datetime import datetime
 # --- CẤU HÌNH CHECKER ---
 TIMEOUT = 5
 MAX_WORKERS = 20
-OUTPUT_FILENAME = "sports.m3u" # ⬅️ BẠN CÓ THỂ ĐỔI TÊN FILE M3U Ở ĐÂY
+OUTPUT_FILENAME = "sports.m3u" # ⬅️ ĐỔI TÊN FILE M3U ĐẦU RA Ở ĐÂY
 
 def check_channel(url):
-    """Kiểm tra link stream sâu (Deep Check) để bắt các lỗi lẩn trốn"""
+    """Kiểm tra link stream sâu (Deep Check) - Phiên bản chống lừa đảo tối đa"""
     try:
         headers = {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
@@ -20,23 +20,46 @@ def check_channel(url):
             'Connection': 'keep-alive',
             'Referer': 'https://google.com/' 
         }
+        
         response = requests.get(url, headers=headers, timeout=TIMEOUT, stream=True, allow_redirects=True)
+        
+        # Vòng 1: Bắt lỗi HTTP cơ bản (403, 404, 500...)
         if response.status_code >= 400:
             return url, False
+            
+        # Vòng 2: Bắt lỗi qua Content-Type (CDN từ chối thường trả về HTML hoặc XML lỗi)
         content_type = response.headers.get('Content-Type', '').lower()
-        if 'text/html' in content_type:
+        if 'html' in content_type or 'xml' in content_type:
             return url, False
+            
+        # Vòng 3: Mở hé nắp file, đọc 50 byte đầu tiên xem ruột là gì
+        # (Dùng errors='ignore' để tránh lỗi nếu link là video nhị phân .ts/.mp4)
+        first_bytes = response.raw.read(50).decode('utf-8', errors='ignore').strip()
+        
+        # Nếu link mạo danh là .m3u8 thì BẮT BUỘC nội dung phải chứa chữ #EXTM3U
+        if '.m3u8' in url or 'mpegurl' in content_type:
+            if not first_bytes.startswith('#EXTM3U'):
+                return url, False
+                
+        # Nếu ruột file là một thông báo lỗi XML/JSON ẩn danh
+        if first_bytes.startswith('<?xml') or first_bytes.startswith('<Error') or first_bytes.startswith('{'):
+            return url, False
+            
         return url, True
+        
     except requests.RequestException:
         return url, False
 
 def update_playlist():
+    # 1. Lấy URL M3U từ biến môi trường
     m3u_url = os.getenv('TV_M3U_SOURCE_URL')
     
+    # Dùng cho lúc test chạy file trực tiếp ở máy tính
     if not m3u_url:
         print("CẢNH BÁO: Chưa set TV_M3U_SOURCE_URL, sử dụng link mặc định để test.")
         m3u_url = "https://iptv-org.github.io/iptv/categories/sports.m3u"
         
+    # Cấu hình retry cho request tải file M3U gốc
     retry_strategy = Retry(
         total=3,
         backoff_factor=1,
@@ -49,6 +72,7 @@ def update_playlist():
     http.mount("http://", adapter)
 
     try:
+        # 2. Tải nội dung M3U
         print(f"Đang tải playlist từ: {m3u_url}...")
         response = http.get(
             m3u_url,
@@ -57,6 +81,7 @@ def update_playlist():
         )
         response.raise_for_status()
         
+        # 3. Phân tích nội dung M3U
         lines = response.text.splitlines()
         header = "#EXTM3U"
         channels = [] 
@@ -72,6 +97,9 @@ def update_playlist():
                 channels.append((current_extinf, line))
                 current_extinf = None
 
+        print(f"Tổng số kênh ban đầu: {len(channels)}")
+
+        # 4. Lọc bỏ các kênh trùng lặp link
         unique_channels = []
         seen_urls = set()
         for extinf, url in channels:
@@ -79,8 +107,10 @@ def update_playlist():
                 seen_urls.add(url)
                 unique_channels.append((extinf, url))
                 
+        print(f"Đã lọc bỏ {len(channels) - len(unique_channels)} kênh trùng lặp.")
         print(f"Bắt đầu kiểm tra {len(unique_channels)} kênh duy nhất...\n")
 
+        # 5. Kiểm tra đa luồng các link
         urls = [c[1] for c in unique_channels]
         check_results = {}
         
@@ -91,14 +121,16 @@ def update_playlist():
                 check_results[url] = is_alive
                 if is_alive:
                     print(f"[🟢 SỐNG] {url}")
+                # Nếu muốn xem link chết, bỏ comment dòng dưới
+                # else:
+                #     print(f"[🔴 CHẾT] {url}")
 
-        # --- PHẦN TẠO THÔNG TIN HEADER TỰ ĐỘNG NHẬN DIỆN TÊN FILE ---
+        # 6. Tái tạo lại nội dung M3U và tạo HEADER
         alive_channels_list = [(extinf, url) for extinf, url in unique_channels if check_results.get(url)]
         alive_count = len(alive_channels_list)
         current_time = datetime.now().strftime("%Y-%m-%d %I:%M:%S %p")
         
-        # Lấy tên file bỏ đuôi .m3u (VD: "sports.m3u" -> "sports"), 
-        # Thay thế dấu "_" hoặc "-" bằng dấu cách, sau đó viết hoa chữ cái đầu -> "Sports"
+        # Tự động tạo tên list dựa trên tên file
         base_name = os.path.splitext(OUTPUT_FILENAME)[0].replace('_', ' ').replace('-', ' ').title()
         
         valid_m3u_lines = [
@@ -110,6 +142,7 @@ def update_playlist():
             "#=================================="
         ]
         
+        # Thêm thông tin kênh vào file
         for extinf, url in alive_channels_list:
             if extinf:
                 valid_m3u_lines.append(extinf)
@@ -117,6 +150,7 @@ def update_playlist():
 
         final_m3u_content = "\n".join(valid_m3u_lines) + "\n"
 
+        # 7. Ghi ra file
         output_path = os.path.join(os.getcwd(), OUTPUT_FILENAME)
         print(f"\nĐang ghi ra file: {output_path}")
         
@@ -133,6 +167,7 @@ def update_playlist():
                 
             print(f"✅ Đã cập nhật thành công {OUTPUT_FILENAME}")
             print(f"📊 Kênh sống thực sự: {alive_count}/{len(unique_channels)}")
+            print(f"📦 Dung lượng: {file_size} bytes")
             
         except Exception as e:
             print(f"Lỗi ghi file {output_path}: {str(e)}")
