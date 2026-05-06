@@ -1,0 +1,33 @@
+name: Update M3U Playlist
+
+on:
+  schedule:
+    - cron: '0 19 * * *' # Chạy vào 2h sáng giờ VN mỗi ngày
+  workflow_dispatch: # Cho phép bấm chạy bằng tay
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+        
+    - name: Install dependencies
+      run: pip install requests
+      
+    - name: Run checker
+      env:
+        TV_M3U_SOURCE_URL: ${{ secrets.TV_M3U_SOURCE_URL }}
+      run: python sports.py
+      
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add sports.m3u
+        git commit -m "Auto-update alive channels" || exit 0
+        git push
