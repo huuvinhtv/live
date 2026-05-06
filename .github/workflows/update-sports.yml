@@ -2,8 +2,8 @@ name: Update M3U Playlist
 
 on:
   schedule:
-    - cron: '0 19 * * *' # Chạy vào 2h sáng giờ VN mỗi ngày
-  workflow_dispatch: # Cho phép bấm chạy bằng tay
+    - cron: '0 */6 * * *' # Chạy tự động mỗi 6 tiếng (tùy bạn chỉnh)
+  workflow_dispatch:
 
 jobs:
   build:
@@ -16,46 +16,21 @@ jobs:
       with:
         python-version: '3.10'
         
-    - name: Install System Dependencies (FFmpeg)
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y ffmpeg
-        
-    - name: Install Python dependencies
-      run: |
-        python -m pip install --upgrade pip
-        # Cài đặt thư viện từ file requirements.txt bạn vừa tạo
-        pip install -r requirements.txt
-        
-    - name: Download & Run Checker
+    - name: Install dependencies
+      run: pip install requests
+      
+    - name: Run checker
       env:
-        TV_M3U_SOURCE_URL: ${{ secrets.TV_M3U_SOURCE_URL }}
-      run: |
-        # 1. Tải playlist gốc về máy ảo GitHub
-        # Nếu chưa set secrets, nó sẽ dùng link test mặc định
-        SOURCE_URL="${TV_M3U_SOURCE_URL:-https://iptv-org.github.io/iptv/categories/sports.m3u}"
-        echo "Đang tải playlist từ: $SOURCE_URL"
-        curl -s -L "$SOURCE_URL" -o source_playlist.m3u
-        
-        # 2. Chạy script check đa luồng
-        # Thêm -split để lọc kênh sống và -rename để gắn thêm info Video/Audio
-        python sports.py source_playlist.m3u -split -rename --workers 10
-        
-        # 3. Đổi tên file kết quả thành sports.m3u để giữ nguyên logic repo của bạn
-        # Lệnh -split ở trên sẽ tạo ra file có đuôi _working.m3u8
-        if [ -f "source_playlist_working.m3u8" ]; then
-          mv source_playlist_working.m3u8 sports.m3u
-          echo "✅ Đã tạo thành công file sports.m3u"
-        else
-          echo "❌ Lỗi: Không tìm thấy file kết quả. Có thể toàn bộ kênh đã chết."
-          exit 1
-        fi
-        
+        TV_M3U_SOURCE_URL: ${{ secrets.TV_M3U_SOURCE_URL }} # Bỏ dòng này nếu bạn lấy link trực tiếp trong code
+      run: python sports.py # Thay bằng tên file python của bạn
+      
     - name: Commit and push changes
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add sports.m3u
         
-        # Lệnh này giúp tránh báo lỗi đỏ trên GitHub Action nếu file không có gì thay đổi so với hôm qua
-        git diff --staged --quiet || (git commit -m "Auto-update alive channels $(date +'%Y-%m-%d')" && git push)
+        # Dùng *.m3u để quét tất cả file m3u vừa được tạo ra
+        git add *.m3u
+        
+        # Lệnh thần thánh: Chỉ commit nếu có sự thay đổi, không có thay đổi thì bỏ qua không báo lỗi
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update IPTV channels" && git push)
