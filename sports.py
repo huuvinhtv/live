@@ -100,7 +100,7 @@ def update_playlist():
         final_m3u_content = "\n".join(valid_m3u_lines) + "\n"
 
         # 6. Ghi ra file tv.m3u
-        output_filename = "tv.m3u"
+        output_filename = "sports.m3u"
         output_path = os.path.join(os.getcwd(), output_filename)
         print(f"\nĐang ghi ra file: {output_path}")
         
