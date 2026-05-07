@@ -2,6 +2,7 @@ import requests
 import os
 import sys
 import concurrent.futures
+from urllib.parse import urljoin # Dùng để nối link con với link mẹ
 from urllib3.util.retry import Retry
 from requests.adapters import HTTPAdapter
 from datetime import datetime
@@ -12,8 +13,9 @@ MAX_WORKERS = 20
 OUTPUT_FILENAME = "sports.m3u" # ⬅️ BẠN ĐỔI TÊN FILE M3U ĐẦU RA Ở ĐÂY
 
 def check_channel(url):
-    """Kiểm tra link stream sâu (Deep Check) - Giả lập VLC/TV chuẩn xác nhất"""
+    """Kiểm tra link stream sâu 2 tầng (Quét sạch mọi Zombie và Soft 404)"""
     try:
+        # LỘT BỎ NGỤY TRANG WEB - Đóng vai đúng phần mềm Player
         headers = {
             'User-Agent': 'VLC/3.0.16 LibVLC/3.0.16',
             'Accept': 'application/x-mpegURL, application/vnd.apple.mpegurl, */*',
@@ -22,7 +24,7 @@ def check_channel(url):
         
         response = requests.get(url, headers=headers, timeout=TIMEOUT, stream=True, allow_redirects=True)
         
-        # Vòng 1: Bắt lỗi HTTP cơ bản
+        # Vòng 1: Bắt lỗi HTTP lớp vỏ (403, 404, 500...)
         if response.status_code >= 400:
             response.close()
             return url, False
@@ -33,43 +35,56 @@ def check_channel(url):
             response.close()
             return url, False
             
-        # Vòng 3: TỰ ĐỘNG GIẢI NÉN GZIP và ép kiểu dữ liệu an toàn
-        first_line = ""
-        try:
-            for line in response.iter_lines(decode_unicode=True):
-                if line: 
-                    if isinstance(line, bytes):
-                        line = line.decode('utf-8', errors='ignore')
-                    first_line = line.strip()
-                    break
-        except Exception:
-            pass
-        finally:
-            response.close() 
-            
-        # --- VÒNG 4: QUÉT NỘI DUNG CHỐNG ZOMBIE ---
-        first_line_lower = first_line.lower()
+        # Vòng 3: Đọc 2048 bytes đầu tiên để phân tích (tự động xử lý GZIP, tiết kiệm RAM)
+        raw_data = response.raw.read(2048)
+        response.close() 
         
-        # 4.1 - M3U8 bắt buộc phải chuẩn chỉ
+        # Ép kiểu an toàn sang chuỗi (string) để tránh lỗi TypeError
+        text_data = raw_data.decode('utf-8', errors='ignore')
+        
+        # Vòng 4: Kiểm tra định dạng chuẩn M3U8
         if '.m3u8' in url or 'mpegurl' in content_type:
-            if not first_line.startswith('#EXTM3U'):
+            if not text_data.startswith('#EXTM3U'):
                 return url, False
                 
-        # 4.2 - Bắt các file XML/JSON báo lỗi ẩn danh
-        if first_line.startswith('<?xml') or first_line.startswith('<Error') or first_line.startswith('{'):
+        # Bắt file XML/JSON báo lỗi ẩn danh
+        if text_data.startswith('<?xml') or text_data.startswith('<Error') or text_data.startswith('{'):
             return url, False
             
-        # 4.3 - Bắt "Soft 404" (Server trả mã 200 nhưng nội dung là chữ báo lỗi)
-        # Bổ sung thêm các từ khóa thường gặp khi server từ chối stream
-        error_keywords = [
-            '404', 'not found', 'file not found', 'access denied', 
-            'forbidden', 'banned', 'blocked', 'error', 'invalid token'
-        ]
-        # Quét xem dòng đầu tiên có chứa từ khóa chết nào không
+        # Vòng 5: Bắt "Soft 404" bằng từ khóa
+        text_data_lower = text_data.lower()
+        error_keywords = ['404', 'not found', 'file not found', 'access denied', 'forbidden', 'banned', 'blocked', 'invalid token', 'error']
         for kw in error_keywords:
-            if kw in first_line_lower:
+            if kw in text_data_lower[:200]: 
                 return url, False
-                
+
+        # --- VÒNG 6 (TRÙM CUỐI): ĐI VÀO RUỘT KIỂM TRA LINK CON ---
+        if '#EXTM3U' in text_data:
+            lines = text_data.splitlines()
+            inner_url = None
+            
+            # Tìm dòng link đầu tiên không phải là comment (#)
+            for line in lines:
+                line = line.strip()
+                if line and not line.startswith('#'):
+                    # Ghép link con với link mẹ cho chuẩn xác (xử lý cả link tuyệt đối và tương đối)
+                    inner_url = urljoin(url, line)
+                    break
+            
+            # Nếu có link con (như index_3.m3u8), gõ cửa thử nó
+            if inner_url:
+                try:
+                    inner_resp = requests.get(inner_url, headers=headers, timeout=TIMEOUT, stream=True, allow_redirects=True)
+                    inner_status = inner_resp.status_code
+                    inner_resp.close()
+                    
+                    # Ruột mà 404 thì đánh chết toàn bộ kênh
+                    if inner_status >= 400:
+                        return url, False
+                except requests.RequestException:
+                    return url, False
+
+        # Sống sót qua 6 vòng địa ngục -> SỐNG THẬT 100%
         return url, True
         
     except requests.RequestException:
@@ -80,12 +95,10 @@ def update_playlist():
     # 1. Lấy URL M3U từ biến môi trường
     m3u_url = os.getenv('TV_M3U_SOURCE_URL')
     
-    # Dùng cho lúc test chạy file trực tiếp ở máy tính
     if not m3u_url:
         print("CẢNH BÁO: Chưa set TV_M3U_SOURCE_URL, sử dụng link mặc định để test.")
         m3u_url = "https://iptv-org.github.io/iptv/categories/sports.m3u"
         
-    # Cấu hình retry cho request tải file M3U gốc
     retry_strategy = Retry(
         total=3,
         backoff_factor=1,
@@ -148,12 +161,11 @@ def update_playlist():
                 if is_alive:
                     print(f"[🟢 SỐNG] {url}")
 
-        # 6. Tái tạo lại nội dung M3U và tạo HEADER TỰ ĐỘNG
+        # 6. Tái tạo lại nội dung M3U và tạo HEADER
         alive_channels_list = [(extinf, url) for extinf, url in unique_channels if check_results.get(url)]
         alive_count = len(alive_channels_list)
         current_time = datetime.now().strftime("%Y-%m-%d %I:%M:%S %p")
         
-        # Tự động tạo tên list (VD: "sports.m3u" -> "Sports")
         base_name = os.path.splitext(OUTPUT_FILENAME)[0].replace('_', ' ').replace('-', ' ').title()
         
         valid_m3u_lines = [
@@ -162,8 +174,7 @@ def update_playlist():
             f"# 🕒 Last Updated: {current_time}",
             f"# 📺 Channels Count : {alive_count}",
             "#==================================",
-            
-            header,
+            header # Chữ #EXTM3U nằm sau phần Header trang trí
         ]
         
         # Thêm thông tin kênh vào file
@@ -211,4 +222,4 @@ if __name__ == "__main__":
     success = update_playlist()
     if not success:
         print("\n❌ LỖI: Quá trình cập nhật thất bại! Đang dừng GitHub Actions...")
-        sys.exit(1) # Ép GitHub Actions báo lỗi đỏ và dừng lại ngay lập tức
+        sys.exit(1) # Ép GitHub Actions báo lỗi đỏ và dừng lại
