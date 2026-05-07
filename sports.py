@@ -13,9 +13,8 @@ MAX_WORKERS = 20
 OUTPUT_FILENAME = "sports.m3u" # ⬅️ BẠN ĐỔI TÊN FILE M3U ĐẦU RA Ở ĐÂY
 
 def check_channel(url):
-    """Kiểm tra link stream sâu 2 tầng (Quét sạch mọi Zombie và Soft 404)"""
+    """Kiểm tra link stream sâu 2 tầng (Fix lỗi GZIP và Redirect 307)"""
     try:
-        # LỘT BỎ NGỤY TRANG WEB - Đóng vai đúng phần mềm Player (VLC)
         headers = {
             'User-Agent': 'VLC/3.0.16 LibVLC/3.0.16',
             'Accept': 'application/x-mpegURL, application/vnd.apple.mpegurl, */*',
@@ -24,7 +23,7 @@ def check_channel(url):
         
         response = requests.get(url, headers=headers, timeout=TIMEOUT, stream=True, allow_redirects=True)
         
-        # Vòng 1: Bắt lỗi HTTP lớp vỏ (403, 404, 500...)
+        # Vòng 1: Bắt lỗi HTTP lớp vỏ
         if response.status_code >= 400:
             response.close()
             return url, False
@@ -35,56 +34,64 @@ def check_channel(url):
             response.close()
             return url, False
             
-        # Vòng 3: Đọc 2048 bytes đầu tiên để phân tích (tự động xử lý GZIP, tiết kiệm RAM)
-        raw_data = response.raw.read(2048)
-        response.close() 
-        
-        # Ép kiểu an toàn sang chuỗi (string) để tránh lỗi TypeError
-        text_data = raw_data.decode('utf-8', errors='ignore')
+        # --- VÒNG 3: FIX LỖI GZIP ---
+        # Sử dụng iter_content để tự động giải nén dữ liệu từ CDN
+        text_data = ""
+        try:
+            for chunk in response.iter_content(chunk_size=2048, decode_unicode=True):
+                if chunk:
+                    if isinstance(chunk, bytes):
+                        text_data = chunk.decode('utf-8', errors='ignore')
+                    else:
+                        text_data = chunk
+                    break # Chỉ lấy 1 chunk (2KB) đầu tiên là đủ phân tích
+        except Exception:
+            pass
+        finally:
+            response.close() 
+            
+        text_data = text_data.strip() # Cắt bỏ khoảng trắng và ký tự ẩn (BOM)
         
         # Vòng 4: Kiểm tra định dạng chuẩn M3U8
         if '.m3u8' in url or 'mpegurl' in content_type:
-            if not text_data.startswith('#EXTM3U'):
+            # Tìm chữ #EXTM3U trong 50 ký tự đầu thay vì startswith để né ký tự ẩn
+            if '#EXTM3U' not in text_data[:50]:
                 return url, False
                 
         # Bắt file XML/JSON báo lỗi ẩn danh
-        if text_data.startswith('<?xml') or text_data.startswith('<Error') or text_data.startswith('{'):
+        if '<xml' in text_data[:50].lower() or '<error' in text_data[:50].lower() or text_data.startswith('{'):
             return url, False
             
-        # Vòng 5: Bắt "Soft 404" bằng từ khóa
+        # Vòng 5: Bắt "Soft 404"
         text_data_lower = text_data.lower()
         error_keywords = ['404', 'not found', 'file not found', 'access denied', 'forbidden', 'banned', 'blocked', 'invalid token', 'error']
         for kw in error_keywords:
             if kw in text_data_lower[:200]: 
                 return url, False
 
-        # --- VÒNG 6 (TRÙM CUỐI): ĐI VÀO RUỘT KIỂM TRA LINK CON ---
+        # --- VÒNG 6 (TRÙM CUỐI): FIX LỖI REDIRECT 307 ---
         if '#EXTM3U' in text_data:
             lines = text_data.splitlines()
             inner_url = None
             
-            # Tìm dòng link đầu tiên không phải là comment (#)
             for line in lines:
                 line = line.strip()
                 if line and not line.startswith('#'):
-                    # Ghép link con với link mẹ cho chuẩn xác (xử lý cả link tuyệt đối và tương đối)
-                    inner_url = urljoin(url, line)
+                    # QUAN TRỌNG: Dùng response.url (link đích sau khi bị chuyển hướng) để ghép nối
+                    inner_url = urljoin(response.url, line)
                     break
             
-            # Nếu có link con (như index_3.m3u8), gõ cửa thử nó
             if inner_url:
                 try:
                     inner_resp = requests.get(inner_url, headers=headers, timeout=TIMEOUT, stream=True, allow_redirects=True)
                     inner_status = inner_resp.status_code
                     inner_resp.close()
                     
-                    # Ruột mà 404 thì đánh chết toàn bộ kênh
                     if inner_status >= 400:
                         return url, False
                 except requests.RequestException:
                     return url, False
 
-        # Sống sót qua 6 vòng địa ngục -> SỐNG THẬT 100%
         return url, True
         
     except requests.RequestException:
