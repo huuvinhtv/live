@@ -7,12 +7,11 @@ from datetime import datetime
 
 # --- CẤU HÌNH CHECKER ---
 TIMEOUT = 5
-MAX_CONCURRENT = 100 # Với aiohttp, bạn có thể đẩy số lượng chạy song song lên 100-200 thoải mái
+MAX_CONCURRENT = 100 
 OUTPUT_FILENAME = "sports.m3u"
 
 async def check_channel(sem, session, url):
     """Kiểm tra link stream sâu 2 tầng bằng Asynchronous"""
-    # Dùng Semaphore để giới hạn số lượng request chạy cùng lúc (tránh nghẽn mạng hoặc bị ban IP)
     async with sem:
         try:
             # Mặt nạ VLC
@@ -37,13 +36,13 @@ async def check_channel(sem, session, url):
                 raw_data = await response.content.read(2048)
                 text_data = raw_data.decode('utf-8', errors='ignore').strip()
                 
-                # Vòng 4: Kiểm tra M3U8 chuẩn & Bắt List Ma (File rỗng)
-                # Đã thêm điều kiện: '/m3u8' hoặc file bắt đầu bằng #EXTM3U là túm cổ vào quét hết
-                if '.m3u8' in url or '/m3u8' in url or 'mpegurl' in content_type or text_data.startswith('#EXTM3U'):
-                    if not text_data.startswith('#EXTM3U'):
+                # Vòng 4: Kiểm tra M3U8 chuẩn & Bắt List Ma
+                # Dùng text_data[:50] để né ký tự ẩn BOM ở đầu file
+                if '.m3u8' in url or '/m3u8' in url or 'mpegurl' in content_type or '#EXTM3U' in text_data[:50]:
+                    if '#EXTM3U' not in text_data[:50]:
                         return url, False
                     
-                    # [BẢN VÁ LIST MA] Bắt buộc file phải chứa thông số video (#EXTINF hoặc luồng)
+                    # Bắt buộc file phải chứa thông số video
                     if '#EXTINF' not in text_data and '#EXT-X-STREAM-INF' not in text_data:
                         return url, False
                     
@@ -54,22 +53,30 @@ async def check_channel(sem, session, url):
                     if kw in text_data_lower[:200]: 
                         return url, False
 
-                # Vòng 6: Quét link con bên trong
+                # --- VÒNG 6: QUÉT LINK CON (ĐÃ FIX LỖI TỐI THƯỢNG) ---
                 if '#EXTM3U' in text_data:
                     lines = text_data.splitlines()
                     inner_url = None
                     for line in lines:
                         line = line.strip()
                         if line and not line.startswith('#'):
-                            # aiohttp trả về response.url là đối tượng yarl.URL, cần ép kiểu str()
                             inner_url = urljoin(str(response.url), line)
                             break
+                    
+                    # [VÁ LỖI CỐT LÕI]: Nếu file m3u8 mà KHÔNG TÌM THẤY link con -> List Ảo -> Chết!
+                    if not inner_url:
+                        return url, False
                     
                     if inner_url:
                         try:
                             # Ping thử link con
                             async with session.get(inner_url, headers=headers, timeout=timeout, allow_redirects=True) as inner_resp:
                                 if inner_resp.status >= 400:
+                                    return url, False
+                                
+                                # Nếu link con trả về 200 OK nhưng ruột là trang web báo lỗi -> Chết!
+                                inner_content_type = inner_resp.headers.get('Content-Type', '').lower()
+                                if 'html' in inner_content_type:
                                     return url, False
                         except Exception:
                             return url, False
@@ -90,7 +97,7 @@ async def main():
         
     print(f"Đang tải playlist từ: {m3u_url}...")
     
-    # 1. TẢI FILE M3U GỐC BẰNG AIOHTTP
+    # TẢI FILE M3U GỐC
     fetch_headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
         'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
@@ -98,19 +105,18 @@ async def main():
     }
     
     m3u_text = ""
-    # Cấu hình timeout cho tải file tổng
     timeout = aiohttp.ClientTimeout(total=30)
     
     try:
         async with aiohttp.ClientSession() as session:
             async with session.get(m3u_url, headers=fetch_headers, timeout=timeout) as response:
-                response.raise_for_status() # Sinh lỗi nếu tải thất bại
+                response.raise_for_status()
                 m3u_text = await response.text()
     except Exception as e:
         print(f"❌ Lỗi tải playlist gốc: {e}")
         sys.exit(1)
 
-    # 2. PHÂN TÍCH VÀ LỌC TRÙNG LẶP
+    # PHÂN TÍCH VÀ LỌC TRÙNG LẶP
     lines = m3u_text.splitlines()
     header = "#EXTM3U"
     channels = [] 
@@ -136,25 +142,22 @@ async def main():
     print(f"Đã lọc bỏ {len(channels) - len(unique_channels)} kênh trùng lặp.")
     print(f"Bắt đầu kiểm tra siêu tốc {len(unique_channels)} kênh bằng Async...\n")
 
-    # 3. KIỂM TRA ĐA LUỒNG ASYNC
+    # KIỂM TRA ĐA LUỒNG ASYNC
     urls = [c[1] for c in unique_channels]
     check_results = {}
     
     sem = asyncio.Semaphore(MAX_CONCURRENT)
-    connector = aiohttp.TCPConnector(limit=MAX_CONCURRENT) # Tối ưu hóa pool kết nối
+    connector = aiohttp.TCPConnector(limit=MAX_CONCURRENT)
     
     async with aiohttp.ClientSession(connector=connector) as session:
-        # Tạo danh sách các task
         tasks = [check_channel(sem, session, url) for url in urls]
-        
-        # as_completed giúp in kết quả ngay khi một kênh quét xong (không cần chờ tất cả)
         for coro in asyncio.as_completed(tasks):
             url, is_alive = await coro
             check_results[url] = is_alive
             if is_alive:
                 print(f"[🟢 SỐNG] {url}")
 
-    # 4. LƯU KẾT QUẢ VÀ TẠO HEADER
+    # LƯU KẾT QUẢ VÀ TẠO HEADER
     alive_channels_list = [(extinf, url) for extinf, url in unique_channels if check_results.get(url)]
     alive_count = len(alive_channels_list)
     current_time = datetime.now().strftime("%Y-%m-%d %I:%M:%S %p")
@@ -198,8 +201,6 @@ async def main():
         sys.exit(1)
 
 if __name__ == "__main__":
-    # Dùng asyncio.run để khởi động hàm main async
-    # Windows đôi khi gặp lỗi EventLoop nếu không cấu hình chuẩn, dùng set_event_loop_policy để khắc phục
     if sys.platform == 'win32':
         asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
     
