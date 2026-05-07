@@ -14,7 +14,6 @@ OUTPUT_FILENAME = "sports.m3u" # ⬅️ BẠN ĐỔI TÊN FILE M3U ĐẦU RA Ở
 def check_channel(url):
     """Kiểm tra link stream sâu (Deep Check) - Giả lập VLC/TV chuẩn xác nhất"""
     try:
-        # LỘT BỎ NGỤY TRANG WEB - Đóng vai đúng phần mềm Player
         headers = {
             'User-Agent': 'VLC/3.0.16 LibVLC/3.0.16',
             'Accept': 'application/x-mpegURL, application/vnd.apple.mpegurl, */*',
@@ -39,10 +38,8 @@ def check_channel(url):
         try:
             for line in response.iter_lines(decode_unicode=True):
                 if line: 
-                    # FIX LỖI TYPEERROR: Ép dữ liệu bytes thành string nếu server trả về bytes thô
                     if isinstance(line, bytes):
                         line = line.decode('utf-8', errors='ignore')
-                    
                     first_line = line.strip()
                     break
         except Exception:
@@ -50,13 +47,29 @@ def check_channel(url):
         finally:
             response.close() 
             
-        # Kiểm tra nội dung (Lúc này first_line chắc chắn 100% là string)
+        # --- VÒNG 4: QUÉT NỘI DUNG CHỐNG ZOMBIE ---
+        first_line_lower = first_line.lower()
+        
+        # 4.1 - M3U8 bắt buộc phải chuẩn chỉ
         if '.m3u8' in url or 'mpegurl' in content_type:
             if not first_line.startswith('#EXTM3U'):
                 return url, False
-        elif first_line.startswith('<?xml') or first_line.startswith('<Error') or first_line.startswith('{'):
+                
+        # 4.2 - Bắt các file XML/JSON báo lỗi ẩn danh
+        if first_line.startswith('<?xml') or first_line.startswith('<Error') or first_line.startswith('{'):
             return url, False
             
+        # 4.3 - Bắt "Soft 404" (Server trả mã 200 nhưng nội dung là chữ báo lỗi)
+        # Bổ sung thêm các từ khóa thường gặp khi server từ chối stream
+        error_keywords = [
+            '404', 'not found', 'file not found', 'access denied', 
+            'forbidden', 'banned', 'blocked', 'error', 'invalid token'
+        ]
+        # Quét xem dòng đầu tiên có chứa từ khóa chết nào không
+        for kw in error_keywords:
+            if kw in first_line_lower:
+                return url, False
+                
         return url, True
         
     except requests.RequestException:
