@@ -38,15 +38,14 @@ async def check_channel(sem, session, url):
                 text_data = raw_data.decode('utf-8', errors='ignore').strip()
                 
                 # Vòng 4: Kiểm tra M3U8 chuẩn & Bắt List Ma (File rỗng)
-                if '.m3u8' in url or 'mpegurl' in content_type:
+                # Đã thêm điều kiện: '/m3u8' hoặc file bắt đầu bằng #EXTM3U là túm cổ vào quét hết
+                if '.m3u8' in url or '/m3u8' in url or 'mpegurl' in content_type or text_data.startswith('#EXTM3U'):
                     if not text_data.startswith('#EXTM3U'):
                         return url, False
+                    
+                    # [BẢN VÁ LIST MA] Bắt buộc file phải chứa thông số video (#EXTINF hoặc luồng)
                     if '#EXTINF' not in text_data and '#EXT-X-STREAM-INF' not in text_data:
                         return url, False
-                        
-                # Bắt XML/JSON ẩn danh
-                if text_data.startswith('<?xml') or text_data.startswith('<Error') or text_data.startswith('{'):
-                    return url, False
                     
                 # Vòng 5: Bắt Soft 404
                 text_data_lower = text_data.lower()
