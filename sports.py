@@ -52,14 +52,17 @@ def check_channel(url):
             
         text_data = text_data.strip() # Cắt bỏ khoảng trắng và ký tự ẩn (BOM)
         
-        # Vòng 4: Kiểm tra định dạng chuẩn M3U8
+       # Vòng 4: Kiểm tra định dạng chuẩn M3U8
         if '.m3u8' in url or 'mpegurl' in content_type:
-            # Tìm chữ #EXTM3U trong 50 ký tự đầu thay vì startswith để né ký tự ẩn
-            if '#EXTM3U' not in text_data[:50]:
+            if not text_data.startswith('#EXTM3U'):
+                return url, False
+                
+            # [BẢN VÁ LỖI LIST MA]: File không được rỗng! Bắt buộc phải có luồng video
+            if '#EXTINF' not in text_data and '#EXT-X-STREAM-INF' not in text_data:
                 return url, False
                 
         # Bắt file XML/JSON báo lỗi ẩn danh
-        if '<xml' in text_data[:50].lower() or '<error' in text_data[:50].lower() or text_data.startswith('{'):
+        if text_data.startswith('<?xml') or text_data.startswith('<Error') or text_data.startswith('{'):
             return url, False
             
         # Vòng 5: Bắt "Soft 404"
