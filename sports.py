@@ -15,7 +15,7 @@ OUTPUT_FILENAME = "sports.m3u" # ⬅️ BẠN ĐỔI TÊN FILE M3U ĐẦU RA Ở
 def check_channel(url):
     """Kiểm tra link stream sâu 2 tầng (Quét sạch mọi Zombie và Soft 404)"""
     try:
-        # LỘT BỎ NGỤY TRANG WEB - Đóng vai đúng phần mềm Player
+        # LỘT BỎ NGỤY TRANG WEB - Đóng vai đúng phần mềm Player (VLC)
         headers = {
             'User-Agent': 'VLC/3.0.16 LibVLC/3.0.16',
             'Accept': 'application/x-mpegURL, application/vnd.apple.mpegurl, */*',
@@ -113,10 +113,18 @@ def update_playlist():
     try:
         # 2. Tải nội dung M3U
         print(f"Đang tải playlist từ: {m3u_url}...")
+        
+        # NGỤY TRANG THÀNH TRÌNH DUYỆT CHROME ĐỂ TRÁNH BỊ CHẶN (BLOCK) KHI TẢI LIST TỪ CÁC NGUỒN KHÓ TÍNH
+        fetch_headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
+            'Accept-Language': 'en-US,en;q=0.5'
+        }
+        
         response = http.get(
             m3u_url,
             timeout=30,
-            headers={'User-Agent': 'M3U-Playlist-Updater/1.0'}
+            headers=fetch_headers
         )
         response.raise_for_status()
         
