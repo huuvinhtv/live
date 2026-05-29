@@ -1,5 +1,6 @@
 import requests
 import os
+import aiohttp
 
 # Cấu hình
 URL = "http://77.137.40.221:8000/playlist.m3u8"
