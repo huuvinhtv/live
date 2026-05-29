@@ -93,7 +93,7 @@ async def main():
     
     if not m3u_url:
         print("CẢNH BÁO: Chưa set TV_M3U_SOURCE_URL, sử dụng link mặc định để test.")
-        m3u_url = "https://iptv-org.github.io/iptv/categories/sports.m3u"
+        m3u_url = "https://raw.githubusercontent.com/zaltvvn/live/refs/heads/playlist/index.m3u"
         
     print(f"Đang tải playlist từ: {m3u_url}...")
     
